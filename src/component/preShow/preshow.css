@@ -1,0 +1,74 @@
+@import '~antd/dist/antd.css';
+
+.root-pre{
+    width: 100%;
+    padding-top: 96px;;
+    max-width: 1280px;
+}
+
+.root{
+    width: 100%;
+    height: 600px;
+    position: absolute; 
+}
+
+.bigX{
+    font-weight: 700;
+    font-size: 576px;
+    font-family: Helvetica;
+    color:  #f1f2f6;
+    position: absolute;left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    user-select: none;
+}
+.Gaia{
+    color: #000000;
+    font-size: 120px;
+    font-family: Helvetica;
+    font-weight: 700;
+    vertical-align: center;
+    user-select: none;
+}
+.X{
+    color:  #0052ff;
+    font-size: 120px;
+    font-family: Helvetica;
+    font-weight: 700;
+    vertical-align: top;
+    user-select: none;
+}
+.mid{
+    width: 100%;
+    height: 600px;
+    position: absolute; 
+}
+.GaiaX{
+    display: flex;
+    position: absolute;left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+.mid-mid-text{
+    margin-top: 30px;
+    font-size: 40px;
+    color: #a0a5b0;
+    font-family: AlibabaPuHuiTi_2_65_Medium;
+    font-weight: 500;
+    position: absolute;left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    white-space:pre;
+    min-width: 424px;
+}
+.mid-mid-button{
+    margin-top: 115px;
+    height: 60px;
+    width: 200px;
+    background-color:  #0052ff;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 24px;
+    user-select: none;
+    position: absolute;left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}

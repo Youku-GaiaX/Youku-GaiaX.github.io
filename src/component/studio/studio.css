@@ -1,0 +1,44 @@
+@import '~antd/dist/antd.css';
+.root-studio{
+    height: 500px;
+    width: 100%;
+    background-color: #ffffffcc;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.studio-container{
+    display: flex;
+    position: relative;
+    width: 66%;
+    max-width: 1280px;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+.studio-title-div{
+    position: relative;
+    width: 600px;
+    height: 420px;
+    margin-right: 40px;
+    min-width: 300px;
+}
+.studio-title-main{
+    color: #000000;
+    font-size: 32px;
+    font-family: AlibabaPuHuiTi_2_65_Medium;
+    font-weight: 900;
+}
+.studio-title-sub{
+    color:  #70757f;
+    font-size: 18px;
+    font-family: PingFang SC;
+    line-height: 40px;
+    font-weight: 400;
+}
+
+.studio-img{
+    position: relative;
+    height: 400px;
+    width: 625px;
+}

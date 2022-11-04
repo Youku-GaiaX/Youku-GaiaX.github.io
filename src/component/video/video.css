@@ -1,0 +1,57 @@
+@import '~antd/dist/antd.css';
+.root-video{
+    height: 688px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f2f6;
+}
+.video-container{
+    display: flex;
+    justify-content: space-between;
+    min-width: 1280px;
+    max-width: 1280px;
+}
+.v-div{
+    width: 66%;
+    position: relative;
+    max-width: 1280px;
+}
+.v-title{
+    font-size: 40px;
+    font-weight: 400;
+    font-family: AlibabaPuHuiTi_2_65_Medium;
+    color: #000000;
+    width: auto;
+    height: 55px;
+    position: relative;
+}
+.video-div{
+    height: 258px;
+    width: 360px;
+    position: relative;
+    top: 40px;
+}
+.video-div:hover{
+    background-color:#eeeeeee6;
+    cursor:pointer;
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+}
+.video-img{
+    width: 360px;
+    height: 202px;
+    border-radius: 24px;
+    background-color: #d8d8d8;
+}
+.video-title{
+    position: relative;
+    top: 20px;
+    width: 360px;
+    height: 33px;
+    color: #000000;
+    font-size: 24px;
+    font-family: AlibabaPuHuiTi_2_65_Medium;
+}

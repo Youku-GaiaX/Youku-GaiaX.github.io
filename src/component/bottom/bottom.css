@@ -1,0 +1,49 @@
+@import '~antd/dist/antd.css';
+.root-bottom{
+    width: 100%;
+    height: 317px;
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+}
+.bottom-button{
+    height: 60px;
+    width: 200px;
+    background-color:  #0052ff;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 36px;
+    font-family: Helvetica;
+}
+.bottom-title{
+    font-size: 40px;
+    color: #ffffff;
+    font-family: Alibaba PuHuiTi;
+    height: 55px;
+    font-weight: 400;
+    min-width: 600px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom-div{
+    max-width: 1280px; 
+}
+.button-div{
+    display: flex;
+    justify-content: center;
+    min-width: 600px;
+    padding-top: 30px;
+}
+.bottom-sub-info{
+    font-size: 16px;
+    font-family: Helvetica;
+    font-weight: 400;
+    color: #696b73;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+}

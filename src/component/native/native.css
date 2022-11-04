@@ -1,0 +1,130 @@
+@import '~antd/dist/antd.css';
+
+.root-native{
+    width: 100%;
+    height: 986px;
+    background-color:  #f1f2f6;
+    margin-top: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: -3;
+}
+.native-card{
+    height: 498px;
+    position: relative;
+    background-color:  #ffffffcc;
+    border-radius: 30px;
+    top: -20px;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+    box-shadow:  0px 12px 24px 0px rgba(0, 0, 0, 0.05);
+}
+.native-card-mid{
+    height: 886px;
+    position: relative;
+    top:50px;
+    width: 66%;
+    min-width: 1000px;
+    max-width: 1280px;
+}
+.native-bottom{
+    height: 144px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.native-title-div{
+    min-width: 600px;
+}
+.native-title{
+    font-size: 40px;
+    font-weight: 900;
+    color: #000000;
+    font-family: AlibabaPuHuiTi_2_65_Medium;
+}
+.native-title-eng{
+    font-size: 40px;
+    font-weight: 900;
+    color: #000000;
+    font-family: AlibabaPuHuiTi_2_65_Medium;
+    margin-top: -36px;
+}
+.native-title-top{
+    display: flex;
+    justify-content: space-between;
+}
+.native-title01{
+    z-index: 0;
+    color: #000000;
+    font-size: 157px;
+    font-family: AlibabaPuHuiTi_2_65_Medium;
+    position: absolute;
+    right: 54px;
+    font-weight: 900;
+    text-align: center;
+    vertical-align: top;
+    width: 189px;
+    height: 216px;
+    top:-10px;
+}
+.native-mid-title-div{
+    width: 47%;
+    position: relative;
+    padding-right: 80px;
+    top:70px;
+    min-width: 400px;
+}
+.native-mid-img{
+    position: relative;
+    left:58px;
+    width: 508px;
+    height: 428px;
+    top: 70px;
+    margin-right: 60px;
+}
+.native-mid-font-title{
+    color:  #000000;
+    width: auto;
+    max-width: 600px;
+    height: 45px;
+    font-size: 32px;
+    font-weight: 900;
+    font-family: AlibabaPuHuiTi_2_65_Medium;
+    min-width: 400px;
+}
+.native-mid-font-title2{
+    color:   #70757f;
+    width: auto;
+    max-width: 600px;
+    height: 237px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+    font-family: PingFang SC;
+    min-width: 400px;
+}
+.native-title02{
+    z-index: 0;
+    color: #000000;
+    font-size: 157px;
+    font-family: AlibabaPuHuiTi_2_65_Medium;
+    right: 54px;
+    font-weight: 900;
+    position: relative;
+    text-align: center;
+    vertical-align: top;
+    width: 189px;
+    height: 216px;
+    top: 9px;
+}
+.native-title2{
+    font-size: 40px;
+    font-weight: 900;
+    color: #000000;
+    font-family: AlibabaPuHuiTi_2_65_Medium;
+    position: relative;
+    top: 90px;
+}
