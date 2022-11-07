@@ -1,7 +1,6 @@
 import React from "react"
 import { Image } from "antd"
 import "./fastview.css"
-import fast from "../../static/gif_fastview.gif"
 
 export default () => (
   <div className="root-fastview">
@@ -20,7 +19,7 @@ export default () => (
             Studio中通过模拟器对模板UI实现所见即所得的UI效果预览。在模板构建进入尾声，需要在真机进行真实数据效果的走查验收阶段，开发者通过GaiaX提供的FastPreview能力，与Studio建立双向实时数据通道，在真机上实现亚秒级的UI效果热更新&预览。
           </p>
         </div>
-        <Image className="fastview-mid-img" src={fast}></Image>
+        <Image className="fastview-mid-img" src={'https://gw.alicdn.com/imgextra/i3/O1CN01SQ3V8c1z6cZUPx1gb_!!6000000006665-1-tps-1287-872.gif'}></Image>
       </div>
     </div>
   </div>

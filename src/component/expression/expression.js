@@ -1,6 +1,5 @@
 import React from "react"
 import "./expression.css"
-import expression from "../../static/carbon.webp"
 
 export default () => (
   <div className="root-expression">
@@ -11,7 +10,7 @@ export default () => (
       </div>
       <div className="expression-mid-div">
         <div className="expression-mid-img-div">
-          <img className="expression-mid-img" src={expression}></img>
+          <img className="expression-mid-img" src={'https://gw.alicdn.com/imgextra/i2/O1CN01KsO0Vw1qf7rkHGlUh_!!6000000005522-49-tps-1476-1228.webp'}></img>
         </div>
         <div className="expression-mid-title-div">
           <p className="expression-mid-title">通过表达式动态驱动模板UI</p>

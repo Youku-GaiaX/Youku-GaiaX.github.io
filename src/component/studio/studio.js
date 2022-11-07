@@ -1,7 +1,6 @@
 import React from "react"
 import "./studio.css"
 import { Image } from "antd"
-import studio from "../../static/gif_studio.webp"
 
 export default () => (
   <div className="root-studio">
@@ -16,7 +15,7 @@ export default () => (
           以开发者最熟悉的交互方式进行工具的设计，让Flexbox模板DSL的构建和学习成本降至最低。
         </p>
       </div>
-      <Image className="studio-img" src={studio}></Image>
+      <Image className="studio-img" src={'https://gw.alicdn.com/imgextra/i4/O1CN01i9o3Bi1MTjXmupyEQ_!!6000000001436-49-tps-1287-872.webp'}></Image>
     </div>
   </div>
 )

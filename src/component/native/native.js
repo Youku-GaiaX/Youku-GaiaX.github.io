@@ -1,6 +1,5 @@
 import React from "react"
 import "./native.css"
-import icon from "../../static/native.webp"
 
 export default () => (
   <div className="root-native">
@@ -13,7 +12,7 @@ export default () => (
         <p className="native-title01">01</p>
       </div>
       <div className="native-card">
-        <img className="native-mid-img" src={icon}></img>
+        <img className="native-mid-img" src={'https://gw.alicdn.com/imgextra/i2/O1CN01p23fsW1gdcPJ2rMif_!!6000000004165-49-tps-1000-842.webp'}></img>
         <div className="native-mid-title-div">
           <p className="native-mid-font-title">创建双端适配的Native卡片</p>
           <p className="native-mid-font-title2">

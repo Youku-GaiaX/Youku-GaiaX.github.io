@@ -1,15 +1,13 @@
 import React from "react"
 import "./header.css"
 import { Button } from "antd"
-import icon from "../../static/gaiax-logo-small.webp"
-import github from "../../static/github.webp"
 
 export default () => (
   <div className="root">
     <div className="left">
       <img
         className="icon"
-        src={icon}
+        src={'https://gw.alicdn.com/imgextra/i3/O1CN01XEj7q21JttJjLvhbP_!!6000000001087-49-tps-96-96.webp'}
         onClick={() => {
           window.location.href = "https://youku-gaiax.github.io/"
         }}
@@ -57,7 +55,7 @@ export default () => (
           window.location.href = "https://github.com/alibaba/GaiaX"
         }}
       >
-        <img className="githubIcon" src={github}></img>
+        <img className="githubIcon" src={'https://gw.alicdn.com/imgextra/i3/O1CN01GAbWVK1OyzoCfGSew_!!6000000001775-49-tps-90-87.webp'}></img>
         <p className="githubtext">GitHub</p>
       </div>
     </div>
