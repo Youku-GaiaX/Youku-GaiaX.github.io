@@ -3,7 +3,7 @@ export const navbar = [
     text: 'GaiaXSDK',
     children: [
       '/gaiaxsdk/introduce.md',
-      '/gaiaxsdk/quickstart.md',
+      '/gaiaxsdk/quick-start.md',
       {
         text: '基础',
         children: [

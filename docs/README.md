@@ -1,65 +1,78 @@
 ---
 home: true
 title: Home
-heroImage: /images/hero.png
 actions:
-  - text: Get Started
-    link: /guide/getting-started.html
+  - text: 开始
+    link: /gaiaxsdk/quick-start.html
     type: primary
-  - text: Introduction
-    link: /guide/
+  - text: 介绍
+    link: /gaiaxsdk/introduce.html
     type: secondary
 features:
-  - title: Simplicity First
-    details: Minimal setup with markdown-centered project structure helps you focus on writing.
-  - title: Vue-Powered
-    details: Enjoy the dev experience of Vue, use Vue components in markdown, and develop custom themes with Vue.
-  - title: Performant
-    details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
-  - title: Themes
-    details: Providing a default theme out of the box. You can also choose a community theme or create your own one.
-  - title: Plugins
-    details: Flexible plugin API, allowing plugins to provide lots of plug-and-play features for your site. 
-  - title: Bundlers
-    details: Default bundler is Vite, while Webpack is also supported. Choose the one you like!
-footer: MIT Licensed | Copyright © 2018-present Evan You
+  - title: 适配双端
+    details: 一套模板、多端渲染，通过多种技术手段来保证极致的渲染效率和逼近原生的性能体验。
+  - title: 可视化搭建
+    details: 可视化的搭建工具，快速完成模板的搭建、编辑、预览、调试，以开发者熟悉的操作方式进行设计，学习成本降至最低。
+  - title: 实时预览
+    details: 通过实时预览的能力，在真机上实现秒级的模板更新和预览，从此不再等待工程构建、编译和安装。
+footer: Apache-2.0 license | Copyright©2022 优酷 youku.com 版权所有
 ---
 
-### As Easy as 1, 2, 3
+### 简单、还是简单！
 
 <CodeGroup>
-  <CodeGroupItem title="YARN" active>
+  <CodeGroupItem title="Android" active>
 
-```bash
-# install in your project
-yarn add -D vuepress@next
+```kotlin
+// Initialization - Initializes the SDK
+GXTemplateEngine.instance.init(activity)
 
-# create a markdown file
-echo '# Hello VuePress' > README.md
+// Template information
+val item = GXTemplateEngine.GXTemplateItem(activity, "templateBiz", "templateId")
 
-# start writing
-yarn vuepress dev
+val size = GXTemplateEngine.GXMeasureSize(100F.dpToPx(), null)
 
-# build to static files
-yarn vuepress build
+// Template data
+val dataJson = AssetsUtils.parseAssets(activity, "template-data.json")
+val data = GXTemplateEngine.GXTemplateData(dataJson)
+
+// Create template View
+val view = GXTemplateEngine.instance.createView(item, size)
+
+// Bind the view data
+GXTemplateEngine.instance.bindData(view, data)
+
+// Insert the template into the container for rendering
+findViewById<ViewGroup>(R.id.template_container).addView(view, 0)
 ```
 
   </CodeGroupItem>
 
-  <CodeGroupItem title="NPM">
+  <CodeGroupItem title="iOS">
   
-```bash
-# install in your project
-npm install -D vuepress@next
+```objc
+// register template service
+[TheGXRegisterCenter registerTemplateServiceWithBizId:bizId templateBundle:@"xxx.bundle"];
 
-# create a markdown file
-echo '# Hello VuePress' > README.md
+// Build template parameters - Template information
+GXTemplateItem *item = [[GXTemplateItem alloc] init];
+item.templateId = templateId;
+item.bizId = templateBiz;
 
-# start writing
-npx vuepress dev
+CGSize size = CGSizeMake(1080, NAN);
 
-# build to static files
-npx vuepress build
+// Template data
+GXTemplateData *data = [[GXTemplateData alloc] init];
+data.data = @{@"xxx": @"xxx"};
+
+// Creates a native View based on template parameters
+UIView *view = [TheGXTemplateEngine creatViewByTemplateItem:item measureSize:size];
+
+// Bind the view data
+[TheGXTemplateEngine bindData:data onView:view];
+
+// Insert the template into the container for rendering
+[self.view addSubview:view];
 ```
 
   </CodeGroupItem>
