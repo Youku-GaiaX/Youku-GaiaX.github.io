@@ -19,6 +19,21 @@ export const navbar = [
           '/gaiaxsdk/expression/expression-syntax.md'
         ],
       },
+      {
+        text: '视图',
+        children: [
+          '/gaiaxsdk/views/view-mapping-relation.md',
+          '/gaiaxsdk/views/view.md',
+          '/gaiaxsdk/views/text.md',
+          '/gaiaxsdk/views/iconfont.md',
+          '/gaiaxsdk/views/image.md',
+          '/gaiaxsdk/views/richtext.md',
+          '/gaiaxsdk/views/scroll.md',
+          '/gaiaxsdk/views/grid.md',
+          '/gaiaxsdk/views/slider.md',
+          '/gaiaxsdk/views/custom-view.md',
+        ],
+      },
     ]
   }
 ]
