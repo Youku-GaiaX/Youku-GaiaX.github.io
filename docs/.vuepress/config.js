@@ -15,6 +15,11 @@ export default defineUserConfig({
   theme: defaultTheme({
     logo: '/images/logo.png',
     repo: '/alibaba/GaiaX',
+    docsRepo: 'Youku-GaiaX/Youku-GaiaX.github.io',
+    docsBranch: 'main',
+    docsDir: 'docs',
+    lastUpdated: true,
+    contributors: true,
     // default theme config
     navbar: navbar,
   }),
