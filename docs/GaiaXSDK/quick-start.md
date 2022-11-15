@@ -1,4 +1,5 @@
 # 快速开始
+
 ## 使用模板Studio进行可视化搭建
 
 为了简化模板UI的构建过程，优酷动态模板引擎技术方案开发了配套的模板可视化搭建工具Studio，通过该工具平台，可以让开发者像操作XCode或AndroidStudio一样，通过拖拽、点选的方式完成模板构建的全过程。接下来我们通过一个简单的模板搭建来介绍一下整个流程。
@@ -22,7 +23,6 @@
 -  第五步：对模板进行数据和事件绑定 
 
 ![910EA8E7-FF46-42C1-B680-3124DEBEF8CB.png](https://gw.alicdn.com/imgextra/i1/O1CN01eEPKox1Ws8o2iHdny_!!6000000002843-2-tps-1194-650.png)
-
 ### 模板内容
 
 通过Studio完成模板搭建，最终生成的模板文件如下：
@@ -87,6 +87,7 @@
 	}
 }
 ```
+
 ## 使用DemoApp扫码预览验证模板
 
 1. 运行安装DemoApp到手机上。
@@ -96,10 +97,11 @@
 5. Demo App上显示Studio模板的UI样式。
 
 ![image.png](https://gw.alicdn.com/imgextra/i1/O1CN018UbM291OGZOQXHtqW_!!6000000001678-2-tps-750-555.png)
-# 模板内置
-## iOS:
+
+## 模板内置
+### iOS:
 在iOS的工程或者frameWork中添加.bundle文件，将Studio搭建模板导出之后，拖入到对应的bundle目录下即可。
-## Android:
+### Android:
 从Studio搭建的模板需要导出后，放置到assets目录下的业务文件夹下，以方便渲染时索引模板。
 
 例如：业务ID是template-biz-id，模板ID是template-mock-id，那么在assets的下的结构如下：
@@ -112,18 +114,20 @@
 	- java
 	- res
 ```
-# 工程依赖
-## iOS:
+
+## 工程依赖
+### iOS:
 在Podfile添加GaiaX对应的依赖
 ```json
 pod GaiaXiOS
 ```
-## Android:
+### Android:
 ```json
 implementation 'com.alibaba.gaiax:GaiaX:0.0.1'
 ```
-# 项目初始化
-## iOS:
+
+## 项目初始化
+### iOS:
 在合适的时机进行模板的注册，以及SDK的初始化
 ```objectivec
 1. 模板注册：
@@ -132,14 +136,14 @@ implementation 'com.alibaba.gaiax:GaiaX:0.0.1'
 2. SDK初始化
 [GXTemplateEngine sharedInstance]
 ```
-
-## Android:
+### Android:
 在合适的时机调用SDK初始化方法
 ```json
 GXTemplateEngine.instance.init(activity or application)
 ```
-# 模板渲染
-## iOS:
+
+## 模板渲染
+### iOS:
 ```objectivec
 // SDK使用方式
 
@@ -169,7 +173,7 @@ UIView *view = [TheGXTemplateEngine creatViewByTemplateItem:item measureSize:siz
 // 将插入模板插入到容器中进行渲染
 [self.view addSubview:view];
 ```
-## Android:
+### Android:
 ```kotlin
 // 构建模板参数     - 模板信息
 // templateBiz    - 业务Id
@@ -194,8 +198,7 @@ GXTemplateEngine.instance.bindData(view, templateData)
 findViewById<LinearLayoutCompat>(R.id.template_1).addView(view, 0)
 ```
 
-
-# 视觉效果
+## 视觉效果
 
 基于前面介绍的三个模板文件，最终渲染的UI视图如下：
 

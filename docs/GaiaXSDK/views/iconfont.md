@@ -2,9 +2,14 @@
 
 ## 介绍
 iconfont 组件是用于承载文字图标。
-iconfont 组件支持 Flexbox 布局、样式、触摸响应、和一些无障碍功能。
+iconfont 组件支持 FlexBox 布局、样式、触摸响应、和一些无障碍功能。
+
 ## 使用前置条件
+
+Android端
+
 在项目工程中实现iconfont字体的加载逻辑：
+
 ```kotlin
 GXRegisterCenter.instance.registerExtensionFontFamily(object :
     GXRegisterCenter.GXIExtensionFontFamily {
@@ -16,7 +21,9 @@ GXRegisterCenter.instance.registerExtensionFontFamily(object :
 ```
 
 iOS端
+
 在项目工程中实现iconfont字体的加载逻辑：
+
 ```objectivec
 1. 创建类，实现GXBizServiceProtocol中的协议
 + (void)loadIconFont{
@@ -29,14 +36,15 @@ iOS端
 
 ## 组件
 定义:
-```
+```json
 {
   "id": "iconfont_normal",
   "type": "iconfont"
 }
 ```
+
 样式：
-```json
+```css
 #iconfont {
 	width:100px;
 	text-overflow:ellipsis;
