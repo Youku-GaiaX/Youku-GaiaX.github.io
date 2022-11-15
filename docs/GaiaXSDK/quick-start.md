@@ -22,7 +22,7 @@
 -  第五步：对模板进行数据和事件绑定 
 
 ![910EA8E7-FF46-42C1-B680-3124DEBEF8CB.png](https://gw.alicdn.com/imgextra/i1/O1CN01eEPKox1Ws8o2iHdny_!!6000000002843-2-tps-1194-650.png)
-### 
+
 ### 模板内容
 
 通过Studio完成模板搭建，最终生成的模板文件如下：
@@ -170,7 +170,7 @@ UIView *view = [TheGXTemplateEngine creatViewByTemplateItem:item measureSize:siz
 [self.view addSubview:view];
 ```
 ## Android:
-```json
+```kotlin
 // 构建模板参数     - 模板信息
 // templateBiz    - 业务Id
 // templateId     - 模板Id
@@ -199,4 +199,4 @@ findViewById<LinearLayoutCompat>(R.id.template_1).addView(view, 0)
 
 基于前面介绍的三个模板文件，最终渲染的UI视图如下：
 
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/100538/1647501024133-e33082f5-e1d4-4290-b007-9137963c4d7c.png#clientId=u826fa50a-91cb-4&crop=0&crop=0&crop=1&crop=1&from=ui&id=u8512a13a&margin=%5Bobject%20Object%5D&name=image.png&originHeight=718&originWidth=1284&originalType=binary&ratio=1&rotation=0&showTitle=false&size=73033&status=done&style=none&taskId=uff377cde-ec7f-4668-b3f9-fc9c02175d0&title=)
+![image.png](https://gw.alicdn.com/imgextra/i3/O1CN01qRwJsJ1gLkxkPOVkg_!!6000000004126-2-tps-1284-718.png)
