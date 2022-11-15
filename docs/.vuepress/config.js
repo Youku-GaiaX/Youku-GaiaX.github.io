@@ -13,6 +13,8 @@ export default defineUserConfig({
   description: 'GaiaX 动态模板引擎是一套轻量级的纯原生动态化卡片跨端解决方案',
   // https://v2.vuepress.vuejs.org/guide/theme.html
   theme: defaultTheme({
+    logo: '/images/logo.png',
+    repo: '/alibaba/GaiaX',
     // default theme config
     navbar: navbar,
   }),
