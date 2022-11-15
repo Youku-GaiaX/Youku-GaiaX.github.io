@@ -2,7 +2,8 @@ export const navbar = [
   {
     text: 'GaiaXSDK',
     children: [
-      '/GaiaX/Introduce.md'
+      '/GaiaXSDK/introduce.md',
+      '/GaiaXSDK/quickstart.md',
     ]
   }
 ]
