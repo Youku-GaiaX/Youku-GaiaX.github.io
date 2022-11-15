@@ -19,8 +19,8 @@ features:
     details: 通过多种技术手段来保证极致的渲染效率和逼近原生的性能体验。
   - title: 动态化
     details: 专为动态化设计，可通过扩展数据源、数据绑定、JS逻辑处理等诸多方案进行动态化。
-  - title: 表达式
-    details: 表达式是逻辑动态化的基础，通过表达式，你可以对模板中的所有视觉元素进行数据驱动。
+  - title: 数据驱动
+    details: 通过表达式，你可以轻松对模板中的所有视觉元素进行数据驱动。
 footer: Apache-2.0 license | Copyright©2022 优酷 youku.com 版权所有
 ---
 
