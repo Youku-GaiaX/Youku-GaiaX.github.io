@@ -99,8 +99,10 @@
 ![image.png](https://gw.alicdn.com/imgextra/i1/O1CN018UbM291OGZOQXHtqW_!!6000000001678-2-tps-750-555.png)
 
 ## 模板内置
+
 ### iOS:
 在iOS的工程或者frameWork中添加.bundle文件，将Studio搭建模板导出之后，拖入到对应的bundle目录下即可。
+
 ### Android:
 从Studio搭建的模板需要导出后，放置到assets目录下的业务文件夹下，以方便渲染时索引模板。
 
@@ -118,12 +120,12 @@
 ## 工程依赖
 ### iOS:
 在Podfile添加GaiaX对应的依赖
-```json
+```bash
 pod GaiaXiOS
 ```
 ### Android:
-```json
-implementation 'com.alibaba.gaiax:GaiaX:0.0.1'
+```bash
+implementation 'com.alibaba.gaiax:GaiaX:$new_version'
 ```
 
 ## 项目初始化
@@ -138,7 +140,7 @@ implementation 'com.alibaba.gaiax:GaiaX:0.0.1'
 ```
 ### Android:
 在合适的时机调用SDK初始化方法
-```json
+```kotlin
 GXTemplateEngine.instance.init(activity or application)
 ```
 

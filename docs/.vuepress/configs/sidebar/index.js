@@ -22,16 +22,7 @@ export const sidebar = [
       {
         text: '视图',
         children: [
-          '/gaiaxsdk/views/view-mapping-relation.md',
-          '/gaiaxsdk/views/view.md',
-          '/gaiaxsdk/views/text.md',
-          '/gaiaxsdk/views/iconfont.md',
-          '/gaiaxsdk/views/image.md',
-          '/gaiaxsdk/views/richtext.md',
-          '/gaiaxsdk/views/scroll.md',
-          '/gaiaxsdk/views/grid.md',
-          '/gaiaxsdk/views/slider.md',
-          '/gaiaxsdk/views/custom-view.md',
+          '/gaiaxsdk/views/views.md',
         ],
       },
       {
@@ -45,7 +36,7 @@ export const sidebar = [
         text: '高级',
         children: [
           '/gaiaxsdk/complex/dynamic-template-data-source.md',
-          '/gaiaxsdk/complex/dynamic-update-style.md',
+          '/gaiaxsdk/complex/manual-track.md',
         ],
       }, 
       {
@@ -54,7 +45,7 @@ export const sidebar = [
           '/gaiaxsdk/other/analyze-library-about.md',
           '/gaiaxsdk/other/expression-version-switch.md',
           '/gaiaxsdk/other/ios-m1-simulator-compile-error.md',
-          '/gaiaxsdk/other/manual-track.md',
+          
         ],
       },
     ]

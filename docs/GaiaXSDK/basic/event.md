@@ -6,28 +6,64 @@
 我们可以在databinding文件中的event数据模块，对模板中的所有元素都可以进行绑定事件，
 
 ## 事件类型
-
-事件类型由事件结构中的type来决定，目前支持以下两种类型，默认为tap类型:
+- 可取值：`tap` `longpress`
+- 默认值：`tap`
+- 详情：事件类型由事件结构中的type来决定。
 
 ```json
-"nodeId": {
-  "type": "tap",
-  "params": "$data.action"
+{
+  "nodeId": {
+    "type": "tap",
+    "params": "$data.action"
+  }
 }
 ```
 
 ```json
-"nodeId": {
-  "type": "longpress",
-  "params": "$data.action"
+{
+  "nodeId": {
+    "type": "longpress",
+    "params": "$data.action"
+  }
 }
 ```
 
-## 示例
+## 事件客户端实现
 
-### 客户端实现
+事件的响应（俗称路由）需要客户端代码的处理。
 
-iOS端实现示例
+- Android端示例
+
+```kotlin
+
+// 初始化
+GXTemplateEngine.instance.init(activity)
+
+// 模板参数
+val params = GXTemplateEngine.GXTemplateItem(activity, "biz", "id")
+
+// 模板绘制尺寸
+val size = GXTemplateEngine.GXMeasureSize(GXScreenUtils.getScreenWidthPx(this), null)
+
+// 模板数据
+val data = AssetsUtils.parseAssets(activity, "data.json")
+val templateData = GXTemplateEngine.GXTemplateData(data)
+
+// 创建模板View
+val view = GXTemplateEngine.instance.createView(params, size)!!
+
+templateData.eventListener = object : GXTemplateEngine.GXIEventListener {
+
+    override fun onGestureEvent(gxGesture: GXTemplateEngine.GXGesture) {
+        super.onGestureEvent(gxGesture)
+        // 处理事件
+    }
+}
+
+// 绑定数据
+GXTemplateEngine.instance.bindData(view, templateData)
+```
+- iOS端示例
 
 ```objectivec
 //iOS端

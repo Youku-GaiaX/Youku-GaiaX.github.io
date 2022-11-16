@@ -1,28 +1,79 @@
 # Lottie动画
-## 属性:
 
-| 属性 | 类型 | 默认值 | 取值 | 说明 | 必填 | 最低版本 | 示例 |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| type | string | 无 | lottie 
-prop
-curvex | 动画类型 | 是 |  |  |
-| trigger | bool | false | true：手动触发，需要和state配合使用。
+## 属性
 
-false：自动触发 | 是否为手动触发动画 | 否 |  |  |
-| state | bool | false | true：不需要
+### type：
+- 类型：`string`
+- 可取值：`lottie` `prop`
+- 描述：动画类型
 
-false: 需要 | 是否需要触发动画 | 否 |  |  |
-| lottieAnimator.value | string | 无 |  | lotte动画本地资源名称 | 是 |  |  |
-| lottieAnimator.url | string | 无 |  | lottie动画远程URL | 是 |  |  |
-| lottieAnimator.loop | bool | false | true：不需要
+### trigger：
+- 类型：`bool`
+- 可取值： 
+    
+    `true`：手动触发，需要和state配合使用。
+    
+    `false`：自动触发
 
-false: 需要 | 动画是否循环播放 | 否 |  |  |
-| lottieAnimator.bundle | string | 无 |  | lottie动画的bundle（只针对有资源的lottie，iOS有效 | 否 |  |  |
+- 默认值：`false`
+- 描述：
+
+    是否手动触发动画
 
 
+### state
+- 类型：`bool`
+- 可取值： 
+    
+    `true`：需要。
+    
+    `false`：不需要。
 
-# 注册动画实现：
+- 默认值：`false`
+- 描述：
+
+    是否需要触发动画
+
+### lottieAnimator.value
+- 类型：`string`
+- 描述：
+
+    lottie动画本地资源名称
+
+### lottieAnimator.url
+- 类型：`string`
+- 描述：
+
+    lottie动画远程URL
+
+### lottieAnimator.loop
+- 类型：`bool`
+- 可取值： 
+    
+    `true`：需要。
+    
+    `false`：不需要。
+
+- 默认值：`false`
+- 描述：
+
+    动画是否循环播放
+
+### lottieAnimator.bundle
+- 类型：`string`
+- 描述：
+
+    lottie动画的bundle（只针对有资源的lottie，iOS有效）
+
+
+## 实现：
+
+### Android实现
+
+不需要接入方实现
+
 ### iOS实现
+
 iOS在使用lottie动画需要根据业务使用的版本，需要根据lottie的动画协议，将lottie对应的动画实现类进行注册进来。
 
 **Lottie动画协议 (业务实现)**
@@ -55,7 +106,7 @@ GXRegisterCenter
 ```
 
 
-# 示例：
+## 示例：
 ```json
 {
     "data": {
@@ -83,16 +134,16 @@ GXRegisterCenter
 									//动画是否循环播放（只对自动播放动画生效）
 			            "loop":true, 
               
-              		//lottie动画的bundle（只针对有资源的lottie，iOS有效）
+                        //lottie动画的bundle（只针对有资源的lottie，iOS有效）
             			"bundle":"gaiax.bundle",
             
             			// 动画的本地资源名称
             			"value": "feed_like_cancel_20200601_data",
             
             			// 动画的远程URL
-            			"url":"http://xxx"
+            			"url":"http://xxx",
               
-              		// 动画的本地资源名称
+              		    // 动画的本地资源名称
            				"value": "feed_like_cancel_20200601_data",
             }
         }
