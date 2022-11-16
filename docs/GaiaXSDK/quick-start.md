@@ -101,9 +101,11 @@
 ## 模板内置
 
 ### iOS:
+
 在iOS的工程或者frameWork中添加.bundle文件，将Studio搭建模板导出之后，拖入到对应的bundle目录下即可。
 
 ### Android:
+
 从Studio搭建的模板需要导出后，放置到assets目录下的业务文件夹下，以方便渲染时索引模板。
 
 例如：业务ID是template-biz-id，模板ID是template-mock-id，那么在assets的下的结构如下：
@@ -118,17 +120,25 @@
 ```
 
 ## 工程依赖
+
 ### iOS:
+
 在Podfile添加GaiaX对应的依赖
+
 ```bash
 pod GaiaXiOS
 ```
+
 ### Android:
+
 ```bash
-implementation 'com.alibaba.gaiax:GaiaX:$new_version'
+implementation 'com.github.alibaba.GaiaX:GaiaX-Adapter:$version'
+implementation 'com.github.alibaba.GaiaX:GaiaX:$version'
+implementation 'com.alibaba:fastjson:1.2.76'
 ```
 
 ## 项目初始化
+
 ### iOS:
 在合适的时机进行模板的注册，以及SDK的初始化
 ```objectivec
