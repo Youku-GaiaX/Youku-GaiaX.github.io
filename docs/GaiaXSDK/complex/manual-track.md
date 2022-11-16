@@ -55,9 +55,37 @@ GXTemplateEngine.instance.onDisappear(view)
 处理手动埋点（点击与曝光）：
 
 ```objectivec
+
+......
+
+// XXX类实现GXTrackProtocal
+
+- (void)gx_onManualClickTrackEvent:(GXTrack *)track { 
+   //点击埋点
+}
+
+- (void)gx_onManualExposureTrackEvent:(GXTrack *)track {
+   //曝光埋点
+}
+
+//trackListener
+templateData.trackListener = XXX
+
+......
+
 ```
 
 通知视图可见与不可见，告知SDK进行曝光回调：
 
 ```objectivec
+
+//获取生成的GaiaX视图
+UIView <GXRootViewProtocal> *rootView = XXX
+
+// 通知视图可见
+[rootView onAppear];
+
+// 通知视图不可见
+[rootView onDisappear];
+
 ```
