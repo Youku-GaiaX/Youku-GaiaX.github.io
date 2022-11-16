@@ -2,12 +2,12 @@
 
 ## 属性
 
-### type：
+### type
 - 类型：`string`
 - 可取值：`lottie` `prop`
 - 描述：动画类型
 
-### trigger：
+### trigger
 - 类型：`bool`
 - 可取值： 
     
@@ -76,7 +76,8 @@
 
 iOS在使用lottie动画需要根据业务使用的版本，需要根据lottie的动画协议，将lottie对应的动画实现类进行注册进来。
 
-**Lottie动画协议 (业务实现)**
+Lottie动画协议 (业务实现)。
+
 ```objectivec
 // lottie动画协议
 GXLottieAniamtionProtocal
@@ -89,7 +90,8 @@ GXLottieAniamtionProtocal
 - (void)gx_stop;
 ```
 
-**实现Lottie动画协议之后，通过GXRegisterCenter将实现注册进来**
+实现Lottie动画协议之后，通过GXRegisterCenter将实现注册进来。
+
 ```objectivec
 // 注册类
 GXRegisterCenter
@@ -105,8 +107,7 @@ GXRegisterCenter
 [[GXRegisterCenter defaultCenter] registerLottieViewClass:[xxxx class]];
 ```
 
-
-## 示例：
+## 示例
 ```json
 {
     "data": {
@@ -150,5 +151,3 @@ GXRegisterCenter
     }
 }
 ```
-
-# 

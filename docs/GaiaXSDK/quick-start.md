@@ -100,11 +100,11 @@
 
 ## 模板内置
 
-### iOS:
+### iOS
 
 在iOS的工程或者frameWork中添加.bundle文件，将Studio搭建模板导出之后，拖入到对应的bundle目录下即可。
 
-### Android:
+### Android
 
 从Studio搭建的模板需要导出后，放置到assets目录下的业务文件夹下，以方便渲染时索引模板。
 
@@ -121,7 +121,7 @@
 
 ## 工程依赖
 
-### iOS:
+### iOS
 
 在Podfile添加GaiaX对应的依赖
 
@@ -129,7 +129,7 @@
 pod GaiaXiOS
 ```
 
-### Android:
+### Android
 
 ```bash
 implementation 'com.github.alibaba.GaiaX:GaiaX-Adapter:$version'
@@ -139,7 +139,7 @@ implementation 'com.alibaba:fastjson:1.2.76'
 
 ## 项目初始化
 
-### iOS:
+### iOS
 在合适的时机进行模板的注册，以及SDK的初始化
 ```objectivec
 1. 模板注册：
@@ -148,14 +148,14 @@ implementation 'com.alibaba:fastjson:1.2.76'
 2. SDK初始化
 [GXTemplateEngine sharedInstance]
 ```
-### Android:
+### Android
 在合适的时机调用SDK初始化方法
 ```kotlin
 GXTemplateEngine.instance.init(activity or application)
 ```
 
 ## 模板渲染
-### iOS:
+### iOS
 ```objectivec
 // SDK使用方式
 
@@ -185,7 +185,7 @@ UIView *view = [TheGXTemplateEngine creatViewByTemplateItem:item measureSize:siz
 // 将插入模板插入到容器中进行渲染
 [self.view addSubview:view];
 ```
-### Android:
+### Android
 ```kotlin
 // 构建模板参数     - 模板信息
 // templateBiz    - 业务Id
