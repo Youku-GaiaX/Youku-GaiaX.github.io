@@ -11,6 +11,15 @@
 - 详情：事件类型由事件结构中的type来决定，支持同时绑定多个事件，但对于同一节点，不支持重复绑定相同类型事件。
 
 ```json
+// 绑定单个事件
+{
+  "nodeId": {
+    "type": "'tap'",
+    "params": "$data.action"
+  }
+}
+
+// 绑定多个事件
 {
   "nodeId": [
     {
@@ -22,14 +31,6 @@
       "params": "$data.action"
     }
   ]
-}
-
-// 也支持下面的写法，但建议用上面写法绑定
-{
-  "nodeId": {
-    "type": "'tap'",
-    "params": "$data.action"
-  }
 }
 ```
 
