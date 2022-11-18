@@ -55,5 +55,11 @@ export const sidebar = [
         ],
       },
     ]
+  },
+  {
+    text: "GaiaStudio",
+    children: [
+      '/gaiastudio/download.md',
+    ]
   }
 ]
