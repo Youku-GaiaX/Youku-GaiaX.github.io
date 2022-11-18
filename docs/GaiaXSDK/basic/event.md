@@ -2,27 +2,32 @@
 
 ## 事件绑定规则
 
-前面介绍了模板的文件包含index.databinding，负责来描述模板中的数据、事件、动画的绑定关系。 
-我们可以在databinding文件中的event数据模块，对模板中的所有元素都可以进行绑定事件，
+前面介绍了模板的文件包含index.databinding，负责来描述模板中的数据、事件、动画的绑定关系。
+我们可以在databinding文件中的event数据模块，对模板中的所有元素都可以进行绑定事件。
 
 ## 事件类型
 - 可取值：`tap` `longpress`
 - 默认值：`tap`
-- 详情：事件类型由事件结构中的type来决定。
+- 详情：事件类型由事件结构中的type来决定，支持同时绑定多个事件，但对于同一节点，不支持重复绑定相同类型事件。
 
 ```json
 {
-  "nodeId": {
-    "type": "tap",
-    "params": "$data.action"
-  }
+  "nodeId": [
+    {
+      "type": "'tap'",
+      "params": "$data.action"
+    },
+    {
+      "type": "'longpress'",
+      "params": "$data.action"
+    }
+  ]
 }
-```
 
-```json
+// 也支持下面的写法，但建议用上面写法绑定
 {
   "nodeId": {
-    "type": "longpress",
+    "type": "'tap'",
     "params": "$data.action"
   }
 }
