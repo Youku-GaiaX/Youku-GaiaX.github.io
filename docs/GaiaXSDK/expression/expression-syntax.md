@@ -187,18 +187,24 @@ $data.title == '' ? 'none' : 'flex'
 	
 	依赖于业务实现和扩展。
 
+**已实现：**
 ```json
 //环境变量(依赖于业务实现： env() -> 返回值Any
 定义：
-	env('isIOS')
+	env('isiOS')
 返回值：
 	Android: true/false iOS: 1/0
 
-//是否android
+//是否android 
 定义：
 	env('isAndroid')
 返回值：
 	Android: true/false iOS: 1/0
+
+```
+
+**未实现：**
+```json
 
 //平台信息
 定义：
