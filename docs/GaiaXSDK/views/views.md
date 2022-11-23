@@ -592,12 +592,29 @@
 
   - slider-indicator-selected-color:
     - 详情：指示器选中颜色
-    - 默认值：'#FFFFFF'
+    - 默认值：`#FFFFFF`
 
   - slider-indicator-unselected-color:
     - 详情：指示器未选中颜色
-    - 默认值：'#BBBBBB'
-    
+    - 默认值：`#BBBBBB`
+
+  - slider-indicator-margin:
+    - 详情：指示器 margin
+    - 默认值：`{0,0,0,0}`
+
+  - slider-indicator-position:
+    - 详情：指示器位置
+    - 可选值：`top-left`, `top-center`, `top-right`, `bottom-left`, `bottom-center`, `bottom-right`
+    - 默认值：`bottom-right`
+
+  - slider-indicator-class-android:
+    - 详情：安卓自定义指示器类名，自定义类需要继承 `com.alibaba.gaiax.render.view.container.slider.GXSliderBaseIndicatorView`
+    - 默认值：无定义，使用默认指示器样式
+
+  - slider-indicator-class-ios:
+    - 详情：
+    - 默认值：
+
 - 详情：
 
   一个轮播容器，可用于承载其他子模板。
@@ -615,6 +632,9 @@
   "slider-infinity-scroll": true,
   "slider-indicator-selected-color": "#FFFFFF",
   "slider-indicator-unselected-color": "#BBBBBB",
+  "slider-indicator-margin": "{10,10,10,10}",
+  "slider-indicator-position": "right-bottom",
+  "slider-indicator-class-android": "com.example.customIndicatorView",
   "layers": [
     {
       "id": "gx-slider-item",
