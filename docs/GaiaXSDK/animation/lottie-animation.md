@@ -122,7 +122,7 @@ GXRegisterCenter
         "like-animation": {
             
             //动画类型
-            "type": "lottie",
+            "type": "'lottie'",
             
             //是否为手动触发
             // true是手动触发；false是自动触发；
@@ -136,16 +136,13 @@ GXRegisterCenter
 			            "loop":true, 
               
                         //lottie动画的bundle（只针对有资源的lottie，iOS有效）
-            			"bundle":"gaiax.bundle",
+            			"bundle":"'gaiax.bundle'",
             
             			// 动画的本地资源名称
-            			"value": "feed_like_cancel_20200601_data",
+            			"value": "'feed_like_cancel_20200601_data'",
             
             			// 动画的远程URL
-            			"url":"http://xxx",
-              
-              		    // 动画的本地资源名称
-           				"value": "feed_like_cancel_20200601_data",
+            			"url":"'http://xxx'"
             }
         }
     }

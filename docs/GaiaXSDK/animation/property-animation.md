@@ -145,7 +145,7 @@
           
             // 动画类型
             // 不支持表达式
-            "type":"prop",
+            "type":"'prop'",
           
             // 是否为手动触发
             // true是手动触发；false是自动触发；
@@ -246,7 +246,7 @@
 {
 	"animation": {
     "cover-img":{
-      "type":"prop",
+      "type":"'prop'",
       "propAnimatorSet":{
         "animators":[
           {
@@ -275,7 +275,7 @@
 {
   "animation":{
     "cover-img":{
-      "type":"prop",
+      "type":"'prop'",
       "propAnimatorSet":{
         "animators":[
           {
@@ -302,7 +302,7 @@
 {
   "animation":{
     "cover-img":{
-      "type":"prop",
+      "type":"'prop'",
       "propAnimatorSet":{
         "animators":[
           {
@@ -329,7 +329,7 @@
 {
   "animation":{
     "cover-img":{
-      "type":"prop",
+      "type":"'prop'",
       "propAnimatorSet":{
         "animators":[
           {
@@ -356,7 +356,7 @@
 {
   "animation":{
     "text-area":{
-      "type":"prop",
+      "type":"'prop'",
       "propAnimatorSet":{
         "animators":[
           {
@@ -384,7 +384,7 @@
 {
   "animation":{
     "cover-img":{
-      "type":"prop",
+      "type":"'prop'",
       "propAnimatorSet":{
         "ordering":"sequentially",
         "animators":[
