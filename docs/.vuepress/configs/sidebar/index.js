@@ -26,10 +26,11 @@ export const sidebar = [
         ],
       },
       {
-        text: '动画',
+        text: '样式与动画',
         children: [
-          '/gaiaxsdk/animation/lottie-animation.md',
-          '/gaiaxsdk/animation/property-animation.md',
+          '/gaiaxsdk/style-animation/lottie-animation.md',
+          '/gaiaxsdk/style-animation/property-animation.md',
+          '/gaiaxsdk/style-animation/blur.md',
         ],
       },
       {
