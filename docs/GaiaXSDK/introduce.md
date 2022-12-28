@@ -86,7 +86,7 @@ GaiaX动态模板引擎是阿里巴巴优酷技术团队研发的一套轻量级
 {
 	"data": {
 		"text": {
-			"value": "Hello World"
+			"value": "'Hello World'"
 		}
 	}
 }
