@@ -282,7 +282,7 @@
             "propAnimator":{
               "delay":0,
               "loopCount":10,
-              "loopMode":"reset",
+              "loopMode":"'reset'",
               "duration":1000,
               "valueType":"'floatType'",
               "propName":"'opacity'",
