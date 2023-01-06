@@ -61,6 +61,7 @@ export const sidebar = [
     text: "GaiaStudio",
     children: [
       '/gaiastudio/download.md',
+      '/gaiastudio/release_log.md',
     ]
   }
 ]

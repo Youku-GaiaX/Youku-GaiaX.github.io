@@ -60,6 +60,7 @@ export const navbar = [
     text: "GaiaStudio",
     children: [
       '/gaiastudio/download.md',
+      '/gaiastudio/release_log.md',
     ]
   }
 ]
