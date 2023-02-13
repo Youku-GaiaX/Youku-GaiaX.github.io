@@ -58,6 +58,12 @@ export const sidebar = [
     ]
   },
   {
+    text: 'GaiaXJS',
+    children: [
+      '/gaiaxjs/introduce.md'
+    ]
+  },
+  {
     text: "GaiaStudio",
     children: [
       '/gaiastudio/download.md',
