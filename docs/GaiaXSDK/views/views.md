@@ -249,27 +249,27 @@
   - value:
     - 本地资源：local:xxxx（local代表本地资源；xxx代表资源名）
     - 网络资源：http://xxxx.png 
-    - mode
-      - 值：`scaleToFill` `aspectFill` `aspectFit` `top` `bottom` `left` `right`
-      - 默认值：`scaleToFill`
-      - 详情：
-          - scaleToFill：不保持宽高比进行缩放，使图片的宽高完全拉伸至填满 
-          - aspectFill：保持图片宽高比进行缩放，使图片的长边能完全显示出来
-          - aspectFit：保持图片宽高比进行缩放，是图片的短边完全铺满
-    - mode-type
-      - 可取值：`crop` `scale`
-      - 默认值：`null`
-      - 详情：
-          - crop：裁剪模式
-              - top:      保持纵横比缩放图片，保证短边显示满，截取顶部区域。
-              - bottom:   保持纵横比缩放图片，保证短边显示满，截取底部区域。
-              - left:     保持纵横比缩放图片，保证短边显示满，截取左部区域。
-              - right:    保持纵横比缩放图片，保证短边显示满，截取右部区域。
-          - scale：缩放模式 
-              - top:      保持纵横比缩放图片，保证长边显示满，将图片挪到视图的顶部区域。
-              - bottom:   保持纵横比缩放图片，保证长边显示满，将图片挪到视图的底部区域。
-              - left:     保持纵横比缩放图片，保证长边显示满，将图片挪到视图的左部区域。
-              - right:    保持纵横比缩放图片，保证长边显示满，将图片挪到视图的右部区域。
+  - mode
+    - 值：`scaleToFill` `aspectFill` `aspectFit` `top` `bottom` `left` `right`
+    - 默认值：`scaleToFill`
+    - 详情：
+        - scaleToFill：不保持宽高比进行缩放，使图片的宽高完全拉伸至填满 
+        - aspectFill：保持图片宽高比进行缩放，使图片的长边能完全显示出来
+        - aspectFit：保持图片宽高比进行缩放，是图片的短边完全铺满
+  - mode-type
+    - 可取值：`crop` `scale`
+    - 默认值：`null`
+    - 详情：
+        - crop：裁剪模式
+            - top:      保持纵横比缩放图片，保证短边显示满，截取顶部区域。
+            - bottom:   保持纵横比缩放图片，保证短边显示满，截取底部区域。
+            - left:     保持纵横比缩放图片，保证短边显示满，截取左部区域。
+            - right:    保持纵横比缩放图片，保证短边显示满，截取右部区域。
+        - scale：缩放模式 
+            - top:      保持纵横比缩放图片，保证长边显示满，将图片挪到视图的顶部区域。
+            - bottom:   保持纵横比缩放图片，保证长边显示满，将图片挪到视图的底部区域。
+            - left:     保持纵横比缩放图片，保证长边显示满，将图片挪到视图的左部区域。
+            - right:    保持纵横比缩放图片，保证长边显示满，将图片挪到视图的右部区域。
   - placeholder: 网络图片占位图
     - local:xxxx （local代表本地资源；xxx代表资源名） 
 
@@ -332,6 +332,7 @@
     "image_view": {
       "value": "$data.image",
       "mode":"scaleToFill",
+      "mode-type":"crop",
       "placeholder":"local:img"
     }
   }
