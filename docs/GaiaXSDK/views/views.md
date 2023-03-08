@@ -35,9 +35,9 @@
         "accessibilityDesc":"'无障碍文案'",
         // 是否可以朗读
         // 优先级高于accessibilityDesc，默认值是true
-        "accessibilityEnable":true/false,
+        "accessibilityEnable": true/false,
         //无障碍控件属性
-        "accessibilityTraits": "button"
+        "accessibilityTraits": "'button'"
 	  }
   }
 }
@@ -97,7 +97,7 @@
         // 优先级高于accessibilityDesc，默认值是true
         "accessibilityEnable": true/false,
         //无障碍控件属性
-        "accessibilityTraits": "button"
+        "accessibilityTraits": "'button'"
 	  }
   }
 }
@@ -156,7 +156,7 @@
   "title":{
       "value":"$title",
       "extend":{
-          "highlight-tag":"#",
+          "highlight-tag":"'#'",
       }
   }
 }
@@ -167,7 +167,7 @@
   "title":{
       "value":"$title",
       "extend":{
-          "highlight-color":"red"
+          "highlight-color":"'red'"
       }
   }
 }
@@ -178,7 +178,7 @@
   "title":{
       "value":"$title",
       "extend":{
-          "highlight-font-size":"12px",
+          "highlight-font-size":"'12px'",
       }
   }
 }
@@ -226,11 +226,11 @@
 {
   "data": {
     "rich_text_normal": {
-      "value": "${data.text}",
+      "value": "$data.text",
       "extend":{
-         "highlight-color":"#00ff00/design token",
+         "highlight-color":"'#00ff00' or 'design token'",
          // 例如：主演: ^克里斯汀^·#贝尔/伊迪娜#·$门泽尔$/乔什·盖德/乔纳森·格罗夫/斯特尔林·K·布朗/埃文·蕾切尔·伍德/阿尔弗雷德·莫里纳/玛莎·普林顿/杰森·雷特/圣蒂诺·方塔纳
-         "highlight-tag":"$ / ^ / *等等"
+         "highlight-tag":"'$' or '^' or '*' or 自定义"
        }
     }
   }
@@ -250,14 +250,14 @@
     - 本地资源：local:xxxx（local代表本地资源；xxx代表资源名）
     - 网络资源：http://xxxx.png 
   - mode
-    - 值：`scaleToFill` `aspectFill` `aspectFit` `top` `bottom` `left` `right`
-    - 默认值：`scaleToFill`
+    - 值：`'scaleToFill'` `'aspectFill'` `'aspectFit'` `'top'` `'bottom'` `'left'` `'right'`
+    - 默认值：`'scaleToFill'`
     - 详情：
         - scaleToFill：不保持宽高比进行缩放，使图片的宽高完全拉伸至填满 
         - aspectFill：保持图片宽高比进行缩放，使图片的长边能完全显示出来
         - aspectFit：保持图片宽高比进行缩放，是图片的短边完全铺满
   - mode-type
-    - 可取值：`crop` `scale`
+    - 可取值：`'crop'` `'scale'`
     - 默认值：`null`
     - 详情：
         - crop：裁剪模式
@@ -271,7 +271,7 @@
             - left:     保持纵横比缩放图片，保证长边显示满，将图片挪到视图的左部区域。
             - right:    保持纵横比缩放图片，保证长边显示满，将图片挪到视图的右部区域。
   - placeholder: 网络图片占位图
-    - local:xxxx （local代表本地资源；xxx代表资源名） 
+    - `'local:xxxx'` （local代表本地资源；xxx代表资源名） 
 
 - 无障碍：
   - accessibilityEnable：
@@ -294,7 +294,7 @@
         // 优先级高于accessibilityDesc，默认值是true
         "accessibilityEnable":true/false,
         //无障碍控件属性
-        "accessibilityTraits": "button"
+        "accessibilityTraits": "'button'"
 	  }
   }
 }
@@ -331,9 +331,9 @@
   "data": {
     "image_view": {
       "value": "$data.image",
-      "mode":"scaleToFill",
-      "mode-type":"crop",
-      "placeholder":"local:img"
+      "mode":"'scaleToFill'",
+      "mode-type":"'crop'",
+      "placeholder":"'local:img'"
     }
   }
 }
@@ -378,7 +378,7 @@
         // 优先级高于accessibilityDesc，默认值是true
         "accessibilityEnable":true/false,
         //无障碍控件属性
-        "accessibilityTraits": "button"
+        "accessibilityTraits": "'button'"
 	  }
   }
 }
@@ -472,8 +472,8 @@ GXRegisterCenter.instance.registerExtensionFontFamily(object :
               "item-type":{
                   "path":"$type", // type = h or v
                   "config":{
-                      "h":"gx-mutable-scroll-item1",
-                      "v":"gx-mutable-scroll-item2"
+                      "h":"'gx-mutable-scroll-item1'",
+                      "v":"'gx-mutable-scroll-item2'"
                   }
               }
           }
