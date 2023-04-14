@@ -26,47 +26,57 @@
   - accessibilityDesc：
     - 取值：string
     - 描述：无障碍内容
-```json
-// 无障碍
-{
-	"data": {
-    "viewId":{
-        // 无障碍朗读文案
-        "accessibilityDesc":"'无障碍文案'",
-        // 是否可以朗读
-        // 优先级高于accessibilityDesc，默认值是true
-        "accessibilityEnable": true/false,
-        //无障碍控件属性
-        "accessibilityTraits": "'button'"
-	  }
+  ```json
+  // 无障碍
+  {
+    "data": {
+      "viewId":{
+          // 无障碍朗读文案
+          "accessibilityDesc":"'无障碍文案'",
+          // 是否可以朗读
+          // 优先级高于accessibilityDesc，默认值是true
+          "accessibilityEnable": true/false,
+          //无障碍控件属性
+          "accessibilityTraits": "'button'"
+      }
+    }
   }
-}
-```
+  ```
+
+- 阴影：
+  - 在非**根**节点上设置阴影
+  ```css
+  box-shadow: 10px 5px 5px 5px #ff0000;
+  ```
+  - 设置溢出裁剪逻辑为不裁剪 (可在Studio上设置视图的样式中设置：溢出裁剪 - 不裁剪)
+  ```css
+  overflow: visible;
+  ```
 
 - 基础使用：
-```json
-// 定义：
-{
-  "id": "view_normal",
-  "type": "view"
-}
-```
-```css
-// 样式：
-#view_normal {
-	width:100px;
-	height:100px;
-	background-color:#e4e4e4;
-}
-```
-```json
-// 事件：
-{
-  "event": {
-    "view_normal": "${}"
+  ```json
+  // 定义：
+  {
+    "id": "view_normal",
+    "type": "view"
   }
-}
-```
+  ```
+  ```css
+  // 样式：
+  #view_normal {
+    width:100px;
+    height:100px;
+    background-color:#e4e4e4;
+  }
+  ```
+  ```json
+  // 事件：
+  {
+    "event": {
+      "view_normal": "${}"
+    }
+  }
+  ```
 
 ## text
 - 实现：
@@ -86,58 +96,58 @@
   - accessibilityDesc：
     - 取值：string
     - 描述：无障碍内容
-```json
-// 无障碍
-{
-	"data": {
-    "viewId":{
-        // 无障碍朗读文案
-        "accessibilityDesc": "'无障碍文案'",
-        // 是否可以朗读
-        // 优先级高于accessibilityDesc，默认值是true
-        "accessibilityEnable": true/false,
-        //无障碍控件属性
-        "accessibilityTraits": "'button'"
-	  }
-  }
-}
-```
-
-- 基础使用：
-```json
-// 定义：
-{
-  "id": "text_normal",
-  "type": "text"
-}
-```
-```css
-// 样式：
-#text_normal {
-	width:100px;
-	text-overflow:ellipsis;
-	height:20px;
-	font-size:15px;
-}
-```
-```json
-// 事件：
-{
-  "event": {
-    "text_normal": ""
-  }
-}
-```
-```json
-// 数据：
-{
-  "data": {
-    "text_normal": {
-      "value": "$data.text"
+  ```json
+  // 无障碍
+  {
+    "data": {
+      "viewId":{
+          // 无障碍朗读文案
+          "accessibilityDesc": "'无障碍文案'",
+          // 是否可以朗读
+          // 优先级高于accessibilityDesc，默认值是true
+          "accessibilityEnable": true/false,
+          //无障碍控件属性
+          "accessibilityTraits": "'button'"
+      }
     }
   }
-}
-```
+  ```
+
+- 基础使用：
+  ```json
+  // 定义：
+  {
+    "id": "text_normal",
+    "type": "text"
+  }
+  ```
+  ```css
+  // 样式：
+  #text_normal {
+    width:100px;
+    text-overflow:ellipsis;
+    height:20px;
+    font-size:15px;
+  }
+  ```
+  ```json
+  // 事件：
+  {
+    "event": {
+      "text_normal": ""
+    }
+  }
+  ```
+  ```json
+  // 数据：
+  {
+    "data": {
+      "text_normal": {
+        "value": "$data.text"
+      }
+    }
+  }
+  ```
 
 
 ## richtext
@@ -151,49 +161,49 @@
 
 - 属性：
   - highlight-tag： 高亮标签
-```json
-{
-  "title":{
-      "value":"$title",
-      "extend":{
-          "highlight-tag":"'#'",
-      }
+  ```json
+  {
+    "title":{
+        "value":"$title",
+        "extend":{
+            "highlight-tag":"'#'",
+        }
+    }
   }
-}
-```
+  ```
   - highlight-color： 高亮颜色
-```json
-{
-  "title":{
-      "value":"$title",
-      "extend":{
-          "highlight-color":"'red'"
-      }
+  ```json
+  {
+    "title":{
+        "value":"$title",
+        "extend":{
+            "highlight-color":"'red'"
+        }
+    }
   }
-}
-```
+  ```
   - highlight-font-size：高亮字体Size
-```json
-{
-  "title":{
-      "value":"$title",
-      "extend":{
-          "highlight-font-size":"'12px'",
-      }
+  ```json
+  {
+    "title":{
+        "value":"$title",
+        "extend":{
+            "highlight-font-size":"'12px'",
+        }
+    }
   }
-}
-```
+  ```
   - highlight-font-weight：高亮字体Weight
-```json
-{
-  "title":{
-      "value":"$title",
-      "extend":{
-          "highlight-font-weight":"600"
-      }
+  ```json
+  {
+    "title":{
+        "value":"$title",
+        "extend":{
+            "highlight-font-weight":"600"
+        }
+    }
   }
-}
-```
+  ```
 
 ::: danger
 - 注意事项：
@@ -204,38 +214,38 @@
 :::
 
 - 使用：
-```
-// 定义:
-{
-  "id": "rich_text_normal",
-  "type": "richtext"
-}
-```
-```css
-// 样式：
-.rich_text_normal {
-	width:100px;
-	text-overflow:ellipsis;
-	height:20px;
-	font-size:15px;
-}
+  ```
+  // 定义:
+  {
+    "id": "rich_text_normal",
+    "type": "richtext"
+  }
+  ```
+  ```css
+  // 样式：
+  .rich_text_normal {
+    width:100px;
+    text-overflow:ellipsis;
+    height:20px;
+    font-size:15px;
+  }
 
-```
-```json
-// 数据：
-{
-  "data": {
-    "rich_text_normal": {
-      "value": "$data.text",
-      "extend":{
-         "highlight-color":"'#00ff00' or 'design token'",
-         // 例如：主演: ^克里斯汀^·#贝尔/伊迪娜#·$门泽尔$/乔什·盖德/乔纳森·格罗夫/斯特尔林·K·布朗/埃文·蕾切尔·伍德/阿尔弗雷德·莫里纳/玛莎·普林顿/杰森·雷特/圣蒂诺·方塔纳
-         "highlight-tag":"'$' or '^' or '*' or 自定义"
-       }
+  ```
+  ```json
+  // 数据：
+  {
+    "data": {
+      "rich_text_normal": {
+        "value": "$data.text",
+        "extend":{
+          "highlight-color":"'#00ff00' or 'design token'",
+          // 例如：主演: ^克里斯汀^·#贝尔/伊迪娜#·$门泽尔$/乔什·盖德/乔纳森·格罗夫/斯特尔林·K·布朗/埃文·蕾切尔·伍德/阿尔弗雷德·莫里纳/玛莎·普林顿/杰森·雷特/圣蒂诺·方塔纳
+          "highlight-tag":"'$' or '^' or '*' or 自定义"
+        }
+      }
     }
   }
-}
-```
+  ```
 
 ## image
 - 实现：
@@ -283,70 +293,70 @@
   - accessibilityDesc：
     - 取值：string
     - 描述：无障碍内容
-```json
-// 无障碍
-{
-	"data": {
-    "viewId":{
-        // 无障碍朗读文案
-        "accessibilityDesc":"'无障碍文案'",
-        // 是否可以朗读
-        // 优先级高于accessibilityDesc，默认值是true
-        "accessibilityEnable":true/false,
-        //无障碍控件属性
-        "accessibilityTraits": "'button'"
-	  }
-  }
-}
-```
-
-- 基础使用：
-```json
-// 定义：
-{
-    "id":"image_view",
-    "type":"image"
-}
-```
-```css
-// 样式：
-#image_view {
-	width:100px;
-	height:100px;
-	background-color:#e4e4e4;
-  ......
-}
-```
-```json
-// 事件：
-{
-  "event": {
-    "image_view": "$url"
-  }
-}
-```
-```json
-// 数据：
-{
-  "data": {
-    "image_view": {
-      "value": "$data.image",
-      "mode":"'scaleToFill'",
-      "mode-type":"'crop'",
-      "placeholder":"'local:img'"
+  ```json
+  // 无障碍
+  {
+    "data": {
+      "viewId":{
+          // 无障碍朗读文案
+          "accessibilityDesc":"'无障碍文案'",
+          // 是否可以朗读
+          // 优先级高于accessibilityDesc，默认值是true
+          "accessibilityEnable":true/false,
+          //无障碍控件属性
+          "accessibilityTraits": "'button'"
+      }
     }
   }
-}
-```
-```json
-// Mock数据:
-{
-  "data": {
-    "image": "https://t7.baidu.com/it/u=376303577,3502948048&fm=193&f=GIF"
-  }
-}
+  ```
 
-```
+- 基础使用：
+  ```json
+  // 定义：
+  {
+      "id":"image_view",
+      "type":"image"
+  }
+  ```
+  ```css
+  // 样式：
+  #image_view {
+    width:100px;
+    height:100px;
+    background-color:#e4e4e4;
+    ......
+  }
+  ```
+  ```json
+  // 事件：
+  {
+    "event": {
+      "image_view": "$url"
+    }
+  }
+  ```
+  ```json
+  // 数据：
+  {
+    "data": {
+      "image_view": {
+        "value": "$data.image",
+        "mode":"'scaleToFill'",
+        "mode-type":"'crop'",
+        "placeholder":"'local:img'"
+      }
+    }
+  }
+  ```
+  ```json
+  // Mock数据:
+  {
+    "data": {
+      "image": "https://t7.baidu.com/it/u=376303577,3502948048&fm=193&f=GIF"
+    }
+  }
+
+  ```
 
 ## iconfont
 
@@ -367,81 +377,81 @@
   - accessibilityDesc：
     - 取值：string
     - 描述：无障碍内容
-```json
-// 无障碍
-{
-	"data": {
-    "viewId":{
-        // 无障碍朗读文案
-        "accessibilityDesc":"'无障碍文案'",
-        // 是否可以朗读
-        // 优先级高于accessibilityDesc，默认值是true
-        "accessibilityEnable":true/false,
-        //无障碍控件属性
-        "accessibilityTraits": "'button'"
-	  }
+  ```json
+  // 无障碍
+  {
+    "data": {
+      "viewId":{
+          // 无障碍朗读文案
+          "accessibilityDesc":"'无障碍文案'",
+          // 是否可以朗读
+          // 优先级高于accessibilityDesc，默认值是true
+          "accessibilityEnable":true/false,
+          //无障碍控件属性
+          "accessibilityTraits": "'button'"
+      }
+    }
   }
-}
-```
+  ```
 
 - 基础使用：
   - 使用前置条件
     - Android端，在项目工程中实现iconfont字体的加载逻辑。
+    ```kotlin
+    GXRegisterCenter.instance.registerExtensionFontFamily(object :
+        GXRegisterCenter.GXIExtensionFontFamily {
+        override fun fontFamily(fontFamilyName: String): Typeface? {
+            // 实现IconFont的加载逻辑
+            return Typeface.createFromAsset(assets, "$fontFamilyName.ttf")
+        }
+    })
+    ```
     - iOS端，在项目工程中实现iconfont字体的加载逻辑。
-```kotlin
-GXRegisterCenter.instance.registerExtensionFontFamily(object :
-    GXRegisterCenter.GXIExtensionFontFamily {
-    override fun fontFamily(fontFamilyName: String): Typeface? {
-        // 实现IconFont的加载逻辑
-        return Typeface.createFromAsset(assets, "$fontFamilyName.ttf")
+    ```objectivec
+    1. 创建类，实现GXBizServiceProtocol中的协议
+    + (void)loadIconFont{
+        //加载iconfont，确认只调用一次
     }
-})
-```
-```objectivec
-1. 创建类，实现GXBizServiceProtocol中的协议
-+ (void)loadIconFont{
-    //加载iconfont，确认只调用一次
-}
 
-2. 注册到GaiaX中
-[[GXRegisterCenter defaultCenter] registerBizServiceImpl:xxx]
-```
-
-```json
-// 定义：
-{
-  "id": "iconfont_normal",
-  "type": "iconfont"
-}
-```
-```css
-// 样式：
-#iconfont {
-  width:100px;
-  text-overflow:ellipsis;
-  height:20px;
-  font-size:15px;
-  ......
-}
-```
-```json
-// 事件
-{
-  "event": {
-    "iconfont": "xxx"
+    2. 注册到GaiaX中
+    [[GXRegisterCenter defaultCenter] registerBizServiceImpl:xxx]
+    ```
+  - 使用
+  ```json
+  // 定义：
+  {
+    "id": "iconfont_normal",
+    "type": "iconfont"
   }
-}
-```
-```json
-// 数据：
-{
-  "data": {
-    "iconfont": {
-      "value": "$data.iconfont"
+  ```
+  ```css
+  // 样式：
+  #iconfont {
+    width:100px;
+    text-overflow:ellipsis;
+    height:20px;
+    font-size:15px;
+    ......
+  }
+  ```
+  ```json
+  // 事件
+  {
+    "event": {
+      "iconfont": "xxx"
     }
   }
-}
-```
+  ```
+  ```json
+  // 数据：
+  {
+    "data": {
+      "iconfont": {
+        "value": "$data.iconfont"
+      }
+    }
+  }
+  ```
 
 ## scroll
 - 实现：
@@ -460,94 +470,94 @@ GXRegisterCenter.instance.registerExtensionFontFamily(object :
     - 可取值：`horizontal` `vertical`
     - 默认值：`horizontal`
   - item-type: 指定数据使用的坑位类型
-```json
-{
-  "data":{
-      "gaia_template_scroll":{
-          // 绑定容器数据源
-          "value":"$nodes",
+  ```json
+  {
+    "data":{
+        "gaia_template_scroll":{
+            // 绑定容器数据源
+            "value":"$nodes",
 
-          "extend":{
-              // 指定数据使用的坑位类型
-              "item-type":{
-                  "path":"$type", // type = h or v
-                  "config":{
-                      "h":"'gx-mutable-scroll-item1'",
-                      "v":"'gx-mutable-scroll-item2'"
-                  }
-              }
+            "extend":{
+                // 指定数据使用的坑位类型
+                "item-type":{
+                    "path":"$type", // type = h or v
+                    "config":{
+                        "h":"'gx-mutable-scroll-item1'",
+                        "v":"'gx-mutable-scroll-item2'"
+                    }
+                }
+            }
+        }
+    }
+  }
+  ```
+
+- 基础使用：
+  ```json
+  // 定义：
+  {
+    "id": "gaia_template_scroll",
+    "type": "gaia-template",
+    "sub-type": "scroll",
+    "direction": "horizontal",
+    "edge-insets": "{0,18,0,18}",
+    "item-spacing": 7,
+    "row-spacing": 0,
+    "layers": [
+      {
+        "id": "gaia_template_scroll_item1",
+        "type": "gaia-template",
+        "sub-type": "custom"
+      },
+      {
+        "id": "gaia_template_scroll_item2",
+        "type": "gaia-template",
+        "sub-type": "custom"
+      }
+    ]
+  }
+
+  ```
+  ```css
+  // 样式：
+  #gaia_template_scroll {
+    width:100%;
+    height:100%;
+    background-color:primaryBackground;
+    ......
+  }
+  ```
+  ```json
+  // 数据：
+  {
+      "data":{
+          "gaia_template_scroll":{
+              "value":"$nodes"
           }
       }
   }
-}
-```
 
-- 基础使用：
-```json
-// 定义：
-{
-  "id": "gaia_template_scroll",
-  "type": "gaia-template",
-  "sub-type": "scroll",
-  "direction": "horizontal",
-  "edge-insets": "{0,18,0,18}",
-  "item-spacing": 7,
-  "row-spacing": 0,
-  "layers": [
-    {
-      "id": "gaia_template_scroll_item1",
-      "type": "gaia-template",
-      "sub-type": "custom"
-    },
-    {
-      "id": "gaia_template_scroll_item2",
-      "type": "gaia-template",
-      "sub-type": "custom"
-    }
-  ]
-}
+  ```
+  ```json
+  // mock数据：
+  {
+    "nodes": [
+      {
+        "img": "https://t7.baidu.com/it/u=376303577,3502948048&fm=193&f=GIF",
+        "title": "我是标题",
+        "subtitle": "我是副标题",
+        "type": "v"
+      },
+      {
+        "img": "https://t7.baidu.com/it/u=376303577,3502948048&fm=193&f=GIF",
+        "title": "我是标题",
+        "subtitle": "我是副标题",
+        "type": "h"
+      },
+    ]
+  }
 
-```
-```css
-// 样式：
- #gaia_template_scroll {
-	width:100%;
-	height:100%;
-	background-color:primaryBackground;
-  ......
-}
-```
-```json
-// 数据：
-{
-    "data":{
-        "gaia_template_scroll":{
-            "value":"$nodes"
-        }
-    }
-}
-
-```
-```json
-// mock数据：
-{
-  "nodes": [
-    {
-      "img": "https://t7.baidu.com/it/u=376303577,3502948048&fm=193&f=GIF",
-      "title": "我是标题",
-      "subtitle": "我是副标题",
-      "type": "v"
-    },
-    {
-      "img": "https://t7.baidu.com/it/u=376303577,3502948048&fm=193&f=GIF",
-      "title": "我是标题",
-      "subtitle": "我是副标题",
-      "type": "h"
-    },
-  ]
-}
-
-```
+  ```
 
 ## grid
 - 实现：
@@ -569,60 +579,60 @@ GXRegisterCenter.instance.registerExtensionFontFamily(object :
     - 默认值：`vertical`
 
 - 基础使用：
-```json
-// 定义:
-{
-  "edge-insets": "{0,18,0,18}",
-  "id": "gx-content-uper-grid",
-  "item-spacing": 9,
-  "row-spacing": 9,
-  "column": 2,
-  "sub-type": "grid",
-  "type": "gaia-template",
-  "layers": [
-    {
-      "type": "gaia-template",
-      "id": "gx-content-uper-grid-item",
-      "sub-type": "custom"
-    }
-  ]
-}
-```
-```css
-// 样式：
-#gx-content-uper-grid {
-  width:100%;
-}
+  ```json
+  // 定义:
+  {
+    "edge-insets": "{0,18,0,18}",
+    "id": "gx-content-uper-grid",
+    "item-spacing": 9,
+    "row-spacing": 9,
+    "column": 2,
+    "sub-type": "grid",
+    "type": "gaia-template",
+    "layers": [
+      {
+        "type": "gaia-template",
+        "id": "gx-content-uper-grid-item",
+        "sub-type": "custom"
+      }
+    ]
+  }
+  ```
+  ```css
+  // 样式：
+  #gx-content-uper-grid {
+    width:100%;
+  }
 
-```
-```json
-// 数据绑定：
-{
-    "data": {
-        "gx-content-uper-grid":{
-            "value":"$nodes"
-        }
-    }
-}
-```
-```json
-// Mock数据：
-{
-  "nodes": [
-    {
-      "img": "https://t7.baidu.com/it/u=376303577,3502948048&fm=193&f=GIF",
-      "title": "我是标题",
-      "subtitle": "我是副标题",
-    },
-    {
-      "img": "https://t7.baidu.com/it/u=376303577,3502948048&fm=193&f=GIF",
-      "title": "我是标题",
-      "subtitle": "我是副标题",
-    },
-  ]
-}
+  ```
+  ```json
+  // 数据绑定：
+  {
+      "data": {
+          "gx-content-uper-grid":{
+              "value":"$nodes"
+          }
+      }
+  }
+  ```
+  ```json
+  // Mock数据：
+  {
+    "nodes": [
+      {
+        "img": "https://t7.baidu.com/it/u=376303577,3502948048&fm=193&f=GIF",
+        "title": "我是标题",
+        "subtitle": "我是副标题",
+      },
+      {
+        "img": "https://t7.baidu.com/it/u=376303577,3502948048&fm=193&f=GIF",
+        "title": "我是标题",
+        "subtitle": "我是副标题",
+      },
+    ]
+  }
 
-```
+  ```
 
 ## slider
 - 实现：
@@ -666,69 +676,69 @@ GXRegisterCenter.instance.registerExtensionFontFamily(object :
     - 默认值：
 
 - 基础使用：
-```json
-// 定义：
-{
-  "id": "gx-slider",
-  "type": "gaia-template",
-  "sub-type": "slider",
-  "slider-scroll-time-interval": 6000,
-  "slider-has-indicator": true,
-  "slider-infinity-scroll": true,
-  "slider-indicator-selected-color": "#FFFFFF",
-  "slider-indicator-unselected-color": "#BBBBBB",
-  "slider-indicator-margin": "{10,10,10,10}",
-  "slider-indicator-position": "right-bottom",
-  "slider-indicator-class-android": "com.example.customIndicatorView",
-  "layers": [
-    {
-      "id": "gx-slider-item",
-      "type": "gaia-template",
-      "sub-type": "custom"
-    }
-  ]
-}
-```
-```css
-// 样式：
-#gx-slider {
-  width: 100%;
-  height: 150px;
-}
-```
-```json
-// 数据绑定：
-{
-  "data":{
-    "gx-slider":{
-      "value":"$nodes",
-      "extend": {
-        "slider-scroll-time-interval": 3000,
-        "slider-infinity-scroll": true,
-        "slider-has-indicator": true,
-        "slider-selected-index": 1,
-        "slider-indicator-selected-color": "'#FFFFFF'",
-        "slider-indicator-unselected-color": "'#BBBBBB'"
+  ```json
+  // 定义：
+  {
+    "id": "gx-slider",
+    "type": "gaia-template",
+    "sub-type": "slider",
+    "slider-scroll-time-interval": 6000,
+    "slider-has-indicator": true,
+    "slider-infinity-scroll": true,
+    "slider-indicator-selected-color": "#FFFFFF",
+    "slider-indicator-unselected-color": "#BBBBBB",
+    "slider-indicator-margin": "{10,10,10,10}",
+    "slider-indicator-position": "right-bottom",
+    "slider-indicator-class-android": "com.example.customIndicatorView",
+    "layers": [
+      {
+        "id": "gx-slider-item",
+        "type": "gaia-template",
+        "sub-type": "custom"
+      }
+    ]
+  }
+  ```
+  ```css
+  // 样式：
+  #gx-slider {
+    width: 100%;
+    height: 150px;
+  }
+  ```
+  ```json
+  // 数据绑定：
+  {
+    "data":{
+      "gx-slider":{
+        "value":"$nodes",
+        "extend": {
+          "slider-scroll-time-interval": 3000,
+          "slider-infinity-scroll": true,
+          "slider-has-indicator": true,
+          "slider-selected-index": 1,
+          "slider-indicator-selected-color": "'#FFFFFF'",
+          "slider-indicator-unselected-color": "'#BBBBBB'"
+        }
       }
     }
   }
-}
-```
-```json
-// Mock数据：
-{
-  "nodes": [
-    {
-      "image": "https://t7.baidu.com/it/u=376303577,3502948048&fm=193&f=GIF",
-      "title": "第一个标题"
-    },
-    {
-      "image": "https://t7.baidu.com/it/u=376303577,3502948048&fm=193&f=GIF",
-      "title": "第二个标题"
-    }
-  ]
-}
-```
+  ```
+  ```json
+  // Mock数据：
+  {
+    "nodes": [
+      {
+        "image": "https://t7.baidu.com/it/u=376303577,3502948048&fm=193&f=GIF",
+        "title": "第一个标题"
+      },
+      {
+        "image": "https://t7.baidu.com/it/u=376303577,3502948048&fm=193&f=GIF",
+        "title": "第二个标题"
+      }
+    ]
+  }
+  ```
 
 ## lottie
 - 实现：
@@ -757,38 +767,38 @@ Android - 自定义视图必须添加Keep注解，防止被混淆。
   - 一个自定义视图的容器，可以用于承载原生视图。
 
 - 基础使用：
-```json
-// 定义：
-{
-	"id": "custom_view",
-	"type": "custom",
-  "view-class-android":"com.xxx.xxx.MyCustomLayout",
-  "view-class-ios":"xxx"
-}
-```
-```css
-// 样式：
-#custom_view {
-	width:100px;
-	height:100px;
-	background-color:#e4e4e4;
-}
-```
-```json
-// 事件：
-{
-  "event": {
-    "custom_view": "$a.b"
+  ```json
+  // 定义：
+  {
+    "id": "custom_view",
+    "type": "custom",
+    "view-class-android":"com.xxx.xxx.MyCustomLayout",
+    "view-class-ios":"xxx"
   }
-}
-```
-```json
-// 数据绑定：
-{
-  "data": {
-    "custom_view": {
-      "value": "$data"
+  ```
+  ```css
+  // 样式：
+  #custom_view {
+    width:100px;
+    height:100px;
+    background-color:#e4e4e4;
+  }
+  ```
+  ```json
+  // 事件：
+  {
+    "event": {
+      "custom_view": "$a.b"
     }
   }
-}
-```
+  ```
+  ```json
+  // 数据绑定：
+  {
+    "data": {
+      "custom_view": {
+        "value": "$data"
+      }
+    }
+  }
+  ```
