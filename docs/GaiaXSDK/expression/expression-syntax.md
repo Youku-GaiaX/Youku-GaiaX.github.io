@@ -205,31 +205,6 @@ $data.title == '' ? 'none' : 'flex'
 
 ```
 
-**未实现：**
-```json
-
-//平台信息
-定义：
-	env('platform')
-返回值：
-	"andriod / ios"
-
-//app版本信息
-定义：
-	env('appVersion')
-返回值：
-	"9.11.x"
-
-//屏幕宽度
-定义：
-	env('screenWidth') / env('screenHeight')
-返回值：
-	GaiaX中的px单位值。
-	Android中则是DP值。
-	iOS则是px值。
-```
-
-
 ####  size
 
 - 详情：
@@ -250,3 +225,24 @@ size(dict)
 size($data.nodes)
 ```
  
+#### 自定义函数
+
+- 详情：
+
+	接入方可以通过扩展能力为GaiaX提供自定义的函数处理能力
+
+- 扩展函数：
+
+```swift
+GXRegisterCenter.default().registerFunctionExpression(...)
+```
+
+```kotlin
+GXRegisterCenter.instance.registerExtensionFunctionExpression(...)
+```
+
+- 案例：
+
+iOS可以参考：https://github.com/alibaba/GaiaX/blob/main/GaiaXiOS/GaiaXiOSTests/TestCase/GXExpressionExtendTest.swift
+
+Android可以参考：https://github.com/alibaba/GaiaX/blob/main/GaiaXAndroid/src/androidTest/java/com/alibaba/gaiax/GXCommonExpressionTest.kt
