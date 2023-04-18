@@ -243,6 +243,6 @@ GXRegisterCenter.instance.registerExtensionFunctionExpression(...)
 
 - 案例：
 
-iOS可以参考：https://github.com/alibaba/GaiaX/blob/main/GaiaXiOS/GaiaXiOSTests/TestCase/GXExpressionExtendTest.swift
+iOS可以参考：<https://github.com/alibaba/GaiaX/blob/main/GaiaXiOS/GaiaXiOSTests/TestCase/GXExpressionExtendTest.swift>
 
-Android可以参考：https://github.com/alibaba/GaiaX/blob/main/GaiaXAndroid/src/androidTest/java/com/alibaba/gaiax/GXCommonExpressionTest.kt
+Android可以参考：<https://github.com/alibaba/GaiaX/blob/main/GaiaXAndroid/src/androidTest/java/com/alibaba/gaiax/GXCommonExpressionTest.kt>
