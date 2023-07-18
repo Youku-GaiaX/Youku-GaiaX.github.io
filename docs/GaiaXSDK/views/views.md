@@ -78,6 +78,32 @@
   }
   ```
 
+
+- 使用表达式动态更新属性值：
+  ```json
+  {
+    // 数据域
+    "data": {
+
+      // 视图ID
+      "view_id": {
+
+         // 扩展属性
+         "extend": {
+
+            // 动态更新display值，display值可为flex和none
+            // display的value域是表达式逻辑，其编写方式需要符合表达式语法
+            // 字符串要加''
+            "display": " $type == 0 ? 'flex' : 'none' ",
+
+            "background-color": " $type == 1 ? '#00ff00' : '#ff00ff' "
+
+         }
+      }
+    }
+  }
+  ```
+
 ## text
 - 实现：
   - Android：TextView
