@@ -178,7 +178,22 @@
   }
   ```
 
-
+- 仅Android:
+  - includeFontPadding
+  ```json
+  // 数据：
+  {
+    "data": {
+      "text_normal": {
+        "value": "$data.text",
+        "extend": {
+          "includeFontPadding": "true"
+        }
+      }
+    }
+  }
+  ```
+  
 ## richtext
 
 - 实现：
