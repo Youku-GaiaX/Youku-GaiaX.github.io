@@ -41,7 +41,9 @@ databinding文件中的data数据模块可用于为节点绑定数据和样式�
 ```
 ### 样式绑定
 
-对于样式和布局的修改，我们通常在databinding对应的nodeId结构中的extend结构进行调整。
+对于样式和布局的动态修改，我们通常在databinding对应的nodeId的extend结构进行调整，例如：
+
+可设置的属性key值可以在这里找到：<https://github.com/alibaba/GaiaX/blob/main/GaiaXAndroid/src/main/kotlin/com/alibaba/gaiax/template/GXTemplateKey.kt>
 
 ```json
 {
@@ -51,7 +53,9 @@ databinding文件中的data数据模块可用于为节点绑定数据和样式�
 		// 动态值 - 直接取值
 		"background-color": "$data.bgColor", 
 		// 动态值 - 通过条件表达式取值
-		"width": "$data.title != null ? '100px' : '200px'" 
+		"width": "$data.title != null ? '100px' : '200px'" ,
+		// 其他属性设置,
+		"margin-left": "'10px'",
 	}
 }
 ```
