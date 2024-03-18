@@ -21,7 +21,7 @@
     - 取值：`true`/`false`
     - 描述：否支持无障碍
   - accessibilityTraits：
-    - 取值：`'button'`/`'image'`/`'text'`/`'none'`
+    - 取值：`'button'`/`'image'`/`'text'`/`'none'/'header'`
     - 描述：无障碍控件属性
   - accessibilityDesc：
     - 取值：string
@@ -120,7 +120,7 @@
     - 取值：`true`/`false`
     - 描述：否支持无障碍
   - accessibilityTraits：
-    - 取值：`'button'`/`'image'`/`'text'`/`'none'`
+    - 取值：`'button'`/`'image'`/`'text'`/`'none'/'header'`
     - 描述：无障碍控件属性
   - accessibilityDesc：
     - 取值：string
@@ -332,7 +332,7 @@
     - 取值：`true`/`false`
     - 描述：否支持无障碍
   - accessibilityTraits：
-    - 取值：`'button'`/`'image'`/`'text'`/`'none'`
+    - 取值：`'button'`/`'image'`/`'text'`/`'none'/'header'`
     - 描述：无障碍控件属性
   - accessibilityDesc：
     - 取值：string
@@ -416,7 +416,7 @@
     - 取值：`true`/`false`
     - 描述：否支持无障碍
   - accessibilityTraits：
-    - 取值：`'button'`/`'image'`/`'text'`/`'none'`
+    - 取值：`'button'`/`'image'`/`'text'`/`'none'/'header'`
     - 描述：无障碍控件属性
   - accessibilityDesc：
     - 取值：string
