@@ -53,7 +53,7 @@
   overflow: visible;
   ```
 
-- 基础使用：
+- 基础用法：
   ```json
   // 定义：
   {
@@ -142,7 +142,7 @@
   }
   ```
 
-- 基础使用：
+- 基础用法：
   ```json
   // 定义：
   {
@@ -354,7 +354,7 @@
   }
   ```
 
-- 基础使用：
+- 基础用法：
   ```json
   // 定义：
   {
@@ -438,7 +438,7 @@
   }
   ```
 
-- 基础使用：
+- 基础用法：
   - 使用前置条件
     - Android端，在项目工程中实现iconfont字体的加载逻辑。
     ```kotlin
@@ -535,8 +535,24 @@
     }
   }
   ```
+  - item-footer-type: 指定加载更多使用的坑位类型
+  ```json
+  {
+    "data":{
+        "template_scroll_load_more": {
+            "value":"$nodes",
+            "extend": {
+                "item-footer-type": {
+                    "id": "'template_scroll_load_more_item_load_more'",
+                    "hasMore": "$isHasMore"
+                }
+            }
+        }
+    }
+  }
+  ```
 
-- 基础使用：
+- 基础用法：
   ```json
   // 定义：
   {
@@ -622,7 +638,7 @@
     - 可取值：`horizontal` `vertical`
     - 默认值：`vertical`
 
-- 基础使用：
+- 基础用法：
   ```json
   // 定义:
   {
@@ -719,7 +735,7 @@
     - 详情：
     - 默认值：
 
-- 基础使用：
+- 基础用法：
   ```json
   // 定义：
   {
@@ -810,7 +826,7 @@ Android - 自定义视图必须添加Keep注解，防止被混淆。
 - 详情：
   - 一个自定义视图的容器，可以用于承载原生视图。
 
-- 基础使用：
+- 基础用法：
   ```json
   // 定义：
   {
