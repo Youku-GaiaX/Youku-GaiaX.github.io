@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-532bb0a9","path":"/GaiaXSDK/views/text.html","title":"text","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1717059539000,"contributors":[{"name":"biezhihua","email":"biezhihua@gmail.com","commits":4}]},"filePathRelative":"GaiaXSDK/views/text.md"}');export{t as data};
