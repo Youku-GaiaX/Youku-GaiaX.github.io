@@ -22,7 +22,18 @@ export const sidebar = [
       {
         text: '视图',
         children: [
-          '/gaiaxsdk/views/views.md',
+          '/gaiaxsdk/views/gaia-template.md',
+          '/gaiaxsdk/views/view.md',
+          '/gaiaxsdk/views/text.md',
+          '/gaiaxsdk/views/richtext.md',
+          '/gaiaxsdk/views/image.md',
+          '/gaiaxsdk/views/iconfont.md',
+          '/gaiaxsdk/views/scroll.md',
+          '/gaiaxsdk/views/grid.md',
+          '/gaiaxsdk/views/slider.md',
+          '/gaiaxsdk/views/lottie.md',
+          '/gaiaxsdk/views/custom_view.md',
+          
         ],
       },
       {
