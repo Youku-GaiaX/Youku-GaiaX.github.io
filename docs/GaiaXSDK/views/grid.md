@@ -1,23 +1,41 @@
 # grid
-- 实现：
-  - Android：RecyclerView
-  - iOS：UICollectionView
+- 实现: 
+  - Android: RecyclerView
+  - iOS: UICollectionView
 
-- 详情：
+- 详情: 
   - 一个多列横滑容器或者竖滑容器，可承载单类型子模板。具备行数、列数、边距、间距等属性。
 
-- 属性值：
+- 属性值: 
   - edge-insets: 内边距
-    - 默认值：`{0,0,0,0}`
+    - 默认值: `{0,0,0,0}`
   - item-spacing: 坑位间距
-    - 默认值：`0`  
+    - 默认值: `0`  
   - row-spacing: 与坑位间距垂直的间距（上下）
-    - 默认值：`0`
+    - 默认值: `0`
   - direction: 容器方向
-    - 可取值：`horizontal` `vertical`
-    - 默认值：`vertical`
+    - 可取值: `horizontal` `vertical`
+    - 默认值: `vertical`
 
-- 基础用法：
+- 扩展属性: 
+  - `itemSameHeight`: 子模板是否高度相同，默认值: `true`。
+    - `true`: 使用第一条数据进行子模板的高度计算，乘以行数作为Grid的高度。
+    - `false`: 逐条数据计算子模板的高度，累加作为Grid的高度。
+    ```json
+    {
+        "data": {
+            "template_grid_1_column_compute_height": {
+                "value":"$nodes",
+                "extend": {
+                    "itemSameHeight": false
+                }
+            }
+        }
+    }
+    ```
+
+
+- 基础用法: 
   ```json
   // 定义:
   {
@@ -38,14 +56,14 @@
   }
   ```
   ```css
-  // 样式：
+  // 样式: 
   #gx-content-uper-grid {
     width:100%;
   }
 
   ```
   ```json
-  // 数据绑定：
+  // 数据绑定: 
   {
       "data": {
           "gx-content-uper-grid":{
@@ -55,7 +73,7 @@
   }
   ```
   ```json
-  // Mock数据：
+  // Mock数据: 
   {
     "nodes": [
       {
