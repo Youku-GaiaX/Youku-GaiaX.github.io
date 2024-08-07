@@ -18,7 +18,7 @@
     - 默认值: `vertical`
 
 - 扩展属性: 
-  - `itemSameHeight`: 子模板是否高度相同，默认值: `true`。
+  - `itemSameHeight`: 在Grid仅有一列的情况下，标记子模板是否高度相同，默认值: `true`。
     - `true`: 使用第一条数据进行子模板的高度计算，乘以行数作为Grid的高度。
     - `false`: 逐条数据计算子模板的高度，累加作为Grid的高度。
     ```json
