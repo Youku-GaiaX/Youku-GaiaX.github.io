@@ -85,3 +85,17 @@
   }
   ```
   
+- 文字渐变色：
+  ```css
+    #nodeId {
+    ...
+    background-image: linear-gradient(to right, #000000 0%, #ffffff 100%);
+    background-image: linear-gradient(to bottom, #000000 0%, #ffffff 100%);
+    background-image: linear-gradient(to left, #000000 0%, #ffffff 100%);
+    background-image: linear-gradient(to top, #000000 0%, #ffffff 100%);
+    background-image: linear-gradient(to bottom right, #000000 0%, #ffffff 100%);
+    background-image: linear-gradient(to bottom left, #000000 0%, #ffffff 100%);
+    background-image: linear-gradient(to top right, #000000 0%, #ffffff 100%);
+    background-image: linear-gradient(to top left, #000000 0%, #ffffff 100%);
+  }
+  ```
