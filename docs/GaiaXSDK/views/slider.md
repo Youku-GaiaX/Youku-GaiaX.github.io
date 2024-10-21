@@ -38,6 +38,28 @@
   - slider-indicator-class-ios:
     - 详情：
     - 默认值：
+  - item-type: 指定数据使用的坑位类型
+  ```json
+  {
+    "data":{
+        "gaia_template_slider":{
+            // 绑定容器数据源
+            "value":"$nodes",
+
+            "extend":{
+                // 指定数据使用的坑位类型
+                "item-type":{
+                    // path计算的结果用于在config中进行匹配，然后取模板
+                    "path":"$type",
+                    "config":{
+                        "h":"'gx-mutable-slider-item1'",
+                        "v":"'gx-mutable-slider-item2'"
+                    }
+                }
+            }
+        }
+    }
+  }
 
 - 基础用法：
   ```json
