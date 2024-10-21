@@ -161,7 +161,7 @@
 
 
 - scrollTo滚动
-  - 通过databinding的extend配置指定字段，让scroll滚动到指定为止
+  - 通过databinding的extend配置指定字段，让scroll滚动到指定位置
   - 参数说明：
     - holding-offset: 重新绑定数据时是否scroll不变化， true/false
     - scroll-index: 仅在holding-offset为true时生效，滚动到指定为止
