@@ -125,3 +125,36 @@
     ]
   }
   ```
+- 事件回调：
+  设置事件回调，在onScrollEvent中接收Slider的滚动事件
+  参数说明：
+    - type: onPageSelected, 代表slider的滚动事件
+    - position: 代表slider当前滚动的位置
+  ```
+  val templateData = GXTemplateEngine.GXTemplateData(AssetsUtils.parseAssets(activity, "assets_data_source/data/gx-slider-multi-type-data.json"))
+  templateData.eventListener = object : GXTemplateEngine.GXIEventListener {
+      override fun onGestureEvent(gxGesture: GXTemplateEngine.GXGesture) {
+          super.onGestureEvent(gxGesture)
+      }
+
+      override fun onScrollEvent(gxScroll: GXTemplateEngine.GXScroll) {
+          super.onScrollEvent(gxScroll)
+          Log.d(TAG, "onScrollEvent() called with: gxScroll type=${gxScroll.type} position=${gxScroll.position}")
+      }
+
+      override fun onAnimationEvent(gxAnimation: GXTemplateEngine.GXAnimation) {
+          super.onAnimationEvent(gxAnimation)
+      }
+  }
+  ```
+
+  日志
+  ```
+  com.alibaba.gaiax.demo               D  onScrollEvent() called with: gxScroll type=onPageSelected position=2
+  com.alibaba.gaiax.demo               D  onScrollEvent() called with: gxScroll type=onPageSelected position=3
+  com.alibaba.gaiax.demo               D  onScrollEvent() called with: gxScroll type=onPageSelected position=0
+  com.alibaba.gaiax.demo               D  onScrollEvent() called with: gxScroll type=onPageSelected position=1
+  com.alibaba.gaiax.demo               D  onScrollEvent() called with: gxScroll type=onPageSelected position=2
+  com.alibaba.gaiax.demo               D  onScrollEvent() called with: gxScroll type=onPageSelected position=3
+  com.alibaba.gaiax.demo               D  onScrollEvent() called with: gxScroll type=onPageSelected position=0
+  ```
