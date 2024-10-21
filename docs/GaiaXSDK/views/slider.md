@@ -130,7 +130,7 @@
   参数说明：
     - type: onPageSelected, 代表slider的滚动事件
     - position: 代表slider当前滚动的位置
-  ```
+  ```kotlin
   val templateData = GXTemplateEngine.GXTemplateData(AssetsUtils.parseAssets(activity, "assets_data_source/data/gx-slider-multi-type-data.json"))
   templateData.eventListener = object : GXTemplateEngine.GXIEventListener {
       override fun onGestureEvent(gxGesture: GXTemplateEngine.GXGesture) {
@@ -149,7 +149,7 @@
   ```
 
   日志
-  ```
+  ```text
   com.alibaba.gaiax.demo               D  onScrollEvent() called with: gxScroll type=onPageSelected position=2
   com.alibaba.gaiax.demo               D  onScrollEvent() called with: gxScroll type=onPageSelected position=3
   com.alibaba.gaiax.demo               D  onScrollEvent() called with: gxScroll type=onPageSelected position=0
@@ -158,3 +158,26 @@
   com.alibaba.gaiax.demo               D  onScrollEvent() called with: gxScroll type=onPageSelected position=3
   com.alibaba.gaiax.demo               D  onScrollEvent() called with: gxScroll type=onPageSelected position=0
   ```
+
+
+- scrollTo滚动
+  - 通过databinding的extend配置指定字段，让scroll滚动到指定为止
+  - 参数说明：
+    - holding-offset: 重新绑定数据时是否scroll不变化， true/false
+    - scroll-index: 仅在holding-offset为true时生效，滚动到指定为止
+    - scroll-animated: 仅在holding-offset为true时生效， 滚动动画，true/false
+
+```json
+{
+    "data":{
+        "gaia_template_slider":{
+            "value":"$nodes",
+            "extend": {
+              "holding-offset":true,
+              "scroll-index": 2,
+              "scroll-animated": true
+            }
+        }
+    }
+}
+```
