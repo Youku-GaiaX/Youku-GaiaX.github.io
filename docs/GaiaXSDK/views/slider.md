@@ -188,6 +188,7 @@
 
 参数说明：
   - `type`: `onPageSelected`, 代表slider的滚动事件。
+  - `view`: 代表slider的Native视图。
   - `position`: 代表slider当前滚动到的位置。
 
 ```kotlin
