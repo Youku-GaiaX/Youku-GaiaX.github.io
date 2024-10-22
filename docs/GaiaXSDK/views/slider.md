@@ -1,43 +1,53 @@
 # slider
-- 实现：
-  - Android：ViewPager
-  - iOS：
 
-- 详情：
-  - 一个轮播容器，可用于承载其他子模板。
+## 实现：
+- Android：ViewPager
+- iOS：
 
-- 属性：
-  - slider-scroll-time-interval：
-    - 详情：自动滚动时间间隔，单位毫秒，当值小于等于 0 时，不自动滚动
-    - 默认值：`3000`
-  - slider-has-indicator：
-    - 详情：是否有指示器
-    - 默认值：`true`
-  - slider-infinity-scroll：
-    - 详情：是否无限滚
-    - 默认值：`true`
-  - slider-selected-index:
-    - 详情：选中位置
-    - 默认值：`0`
-  - slider-indicator-selected-color:
-    - 详情：指示器选中颜色
-    - 默认值：`#FFFFFF`
-  - slider-indicator-unselected-color:
-    - 详情：指示器未选中颜色
-    - 默认值：`#BBBBBB`
-  - slider-indicator-margin:
-    - 详情：指示器 margin
-    - 默认值：`{0,0,0,0}`
-  - slider-indicator-position:
-    - 详情：指示器位置
-    - 可选值：`top-left`, `top-center`, `top-right`, `bottom-left`, `bottom-center`, `bottom-right`
-    - 默认值：`bottom-right`
-  - slider-indicator-class-android:
-    - 详情：安卓自定义指示器类名，自定义类需要继承 `com.alibaba.gaiax.render.view.container.slider.GXSliderBaseIndicatorView`
-    - 默认值：无定义，使用默认指示器样式
-  - slider-indicator-class-ios:
-    - 详情：
-    - 默认值：
+## 详情：
+- 一个轮播容器，可用于承载其他子模板。
+
+## 属性：
+ 
+ 在index.json中配置
+
+- slider-scroll-time-interval：
+  - 详情：自动滚动时间间隔，单位毫秒，当值小于等于 0 时，不自动滚动
+  - 默认值：`3000`
+- slider-has-indicator：
+  - 详情：是否有指示器
+  - 默认值：`true`
+- slider-infinity-scroll：
+  - 详情：是否无限滚
+  - 默认值：`true`
+- slider-selected-index:
+  - 详情：选中位置
+  - 默认值：`0`
+- slider-indicator-selected-color:
+  - 详情：指示器选中颜色
+  - 默认值：`#FFFFFF`
+- slider-indicator-unselected-color:
+  - 详情：指示器未选中颜色
+  - 默认值：`#BBBBBB`
+- slider-indicator-margin:
+  - 详情：指示器 margin
+  - 默认值：`{0,0,0,0}`
+- slider-indicator-position:
+  - 详情：指示器位置
+  - 可选值：`top-left`, `top-center`, `top-right`, `bottom-left`, `bottom-center`, `bottom-right`
+  - 默认值：`bottom-right`
+- slider-indicator-class-android:
+  - 详情：安卓自定义指示器类名，自定义类需要继承 `com.alibaba.gaiax.render.view.container.slider.GXSliderBaseIndicatorView`
+  - 默认值：无定义，使用默认指示器样式
+- slider-indicator-class-ios:
+  - 详情：指示器实现类
+  - 默认值：
+
+## 扩展属性
+
+在`databinding.json`中的节点`extend`中配置生效。
+
+
   - item-type: 指定数据使用的坑位类型
   ```json
   {
