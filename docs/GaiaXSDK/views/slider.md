@@ -38,7 +38,7 @@
   - 默认值：`bottom-right`
 - slider-indicator-class-android:
   - 详情：安卓自定义指示器类名，自定义类需要继承 `com.alibaba.gaiax.render.view.container.slider.GXSliderBaseIndicatorView`
-  - 默认值：无定义，使用默认指示器样式
+  - 默认值：无定义，使用默认指示器样式。`com.alibaba.gaiax.render.view.container.slider.GXSliderDefaultIndicatorView`
 - slider-indicator-class-ios:
   - 详情：指示器实现类
   - 默认值：
@@ -58,7 +58,7 @@
     - 详情：是否无限滚
     - 默认值：`true`
   - slider-selected-index:
-    - 详情：选中位置
+    - 详情：默认选中位置
     - 默认值：`0`
   - slider-indicator-selected-color:
     - 详情：指示器选中颜色
