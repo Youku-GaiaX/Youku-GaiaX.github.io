@@ -202,27 +202,3 @@ templateData.eventListener = object : GXTemplateEngine.GXIEventListener {
 
 }
 ```
-
-## 滚动
-
-在`extend`配置字段让`slider`滚动到指定位置。
-
-- 参数说明：
-  - `holding-offset`: `true` or `false`, 重新绑定数据时是否`scroll`位置不变化。
-  - `scroll-index`: 滚动到目标位置。仅在`"holding-offset": true`时生效。
-  - `scroll-animated`: `true` or `false`。仅在`"holding-offset": true`时生效。
-
-```json
-{
-    "data":{
-        "gaia_template_slider":{
-            "value":"$nodes",
-            "extend": {
-              "holding-offset": true,
-              "scroll-index": 2,
-              "scroll-animated": true
-            }
-        }
-    }
-}
-```
