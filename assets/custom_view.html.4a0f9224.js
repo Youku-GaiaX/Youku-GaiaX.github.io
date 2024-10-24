@@ -1,0 +1,28 @@
+import{_ as s,o as a,c as e,f as t}from"./app.a9cb9a51.js";const i={};function o(l,n){return a(),e("div",null,n[0]||(n[0]=[t(`<h1 id="custom-view" tabindex="-1"><a class="header-anchor" href="#custom-view" aria-hidden="true">#</a> custom view</h1><ul><li>\u5B9E\u73B0\uFF1A <ul><li>\u81EA\u5B9A\u4E49\u89C6\u56FE\u5FC5\u987B\u5B9E\u73B0\u5982\u4E0B\u63A5\u53E3\uFF1A <ul><li>\u6570\u636E\u7ED1\u5B9A\u63A5\u53E3: <ul><li>Android: <code>com.alibaba.gaiax.GXTemplateEngine.GXICustomViewBindData</code></li><li>iOS: <code>- (void)gx_bindData:(id)data</code></li></ul></li></ul></li><li>\u5728index.json\u4E2D\uFF0C\u65B0\u589E\u8282\u70B9\u7C7B\u578B\u201Ccustom\u201D\u503C\u7C7B\u578B\uFF0C\u7528\u6765\u8868\u660E\u8BE5\u8282\u70B9\u662F\u81EA\u5B9A\u4E49view\u3002 <ul><li>\u5728\u540C\u7EA7\u8282\u70B9\u589E\u52A0<code>view-class-ios</code>\u4EE3\u8868ios\u8282\u70B9\u7684\u8282\u70B9\u6620\u5C04\u7684\u81EA\u5B9A\u4E49View\u3002</li><li>\u5728\u540C\u7EA7\u8282\u70B9\u589E\u52A0<code>view-class-android</code>\u4EE3\u8868android\u8282\u70B9\u7684\u8282\u70B9\u6620\u5C04\u7684\u81EA\u5B9A\u4E49View\u3002</li></ul></li></ul></li></ul><div class="custom-container danger"><p class="custom-container-title">\u8B66\u544A</p><p>Android - \u81EA\u5B9A\u4E49\u89C6\u56FE\u5FC5\u987B\u6DFB\u52A0Keep\u6CE8\u89E3\uFF0C\u9632\u6B62\u88AB\u6DF7\u6DC6\u3002</p></div><ul><li><p>\u8BE6\u60C5\uFF1A</p><ul><li>\u4E00\u4E2A\u81EA\u5B9A\u4E49\u89C6\u56FE\u7684\u5BB9\u5668\uFF0C\u53EF\u4EE5\u7528\u4E8E\u627F\u8F7D\u539F\u751F\u89C6\u56FE\u3002</li></ul></li><li><p>\u57FA\u7840\u7528\u6CD5\uFF1A</p><div class="language-json ext-json line-numbers-mode"><pre class="language-json"><code><span class="token comment">// \u5B9A\u4E49\uFF1A</span>
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;custom_view&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;custom&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;view-class-android&quot;</span><span class="token operator">:</span><span class="token string">&quot;com.xxx.xxx.MyCustomLayout&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;view-class-ios&quot;</span><span class="token operator">:</span><span class="token string">&quot;xxx&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-css ext-css line-numbers-mode"><pre class="language-css"><code><span class="token selector">// \u6837\u5F0F\uFF1A
+#custom_view</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span>100px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span>100px<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span>#e4e4e4<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-json ext-json line-numbers-mode"><pre class="language-json"><code><span class="token comment">// \u4E8B\u4EF6\uFF1A</span>
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;event&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;custom_view&quot;</span><span class="token operator">:</span> <span class="token string">&quot;$a.b&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-json ext-json line-numbers-mode"><pre class="language-json"><code><span class="token comment">// \u6570\u636E\u7ED1\u5B9A\uFF1A</span>
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;custom_view&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;$data&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li></ul>`,4)]))}const c=s(i,[["render",o],["__file","custom_view.html.vue"]]);export{c as default};
