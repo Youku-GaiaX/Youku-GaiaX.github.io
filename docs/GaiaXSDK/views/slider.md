@@ -202,23 +202,3 @@ templateData.eventListener = object : GXTemplateEngine.GXIEventListener {
 
 }
 ```
-
-## 滚动
-
-在`extend`配置字段让`slider`滚动到指定位置。
-
-- 参数说明：
-  - `slider-selected-index`: 滚动到目标位置。
-
-```json
-{
-    "data":{
-        "gaia_template_slider":{
-            "value":"$nodes",
-            "extend": {
-              "slider-selected-index": 2,
-            }
-        }
-    }
-}
-```
