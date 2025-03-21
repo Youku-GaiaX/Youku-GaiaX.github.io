@@ -8,6 +8,8 @@
   - 在index.json中，新增节点类型“custom”值类型，用来表明该节点是自定义view。
     - 在同级节点增加`view-class-ios`代表ios节点的节点映射的自定义View。
     - 在同级节点增加`view-class-android`代表android节点的节点映射的自定义View。
+  - 提示：
+    - 目前自定义View仅支持使用css、databinding调整宽高，从自定义View内部修改的宽高不会生效。
 
 ::: danger
 Android - 自定义视图必须添加Keep注解，防止被混淆。
@@ -52,3 +54,16 @@ Android - 自定义视图必须添加Keep注解，防止被混淆。
     }
   }
   ```
+
+- Android:
+```kotlin
+@Keep
+class CustomView(context: Context?) : View(context), GXTemplateEngine.GXICustomViewBindData {
+
+    var data: JSONObject? = null
+
+    override fun onBindData(data: JSONObject?) {
+        this.data = data
+    }
+}
+```
