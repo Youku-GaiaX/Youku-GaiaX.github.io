@@ -71,7 +71,7 @@
   ```
   ```css
   // 样式：
-  .rich_text_normal {
+  #rich_text_normal {
     width:100px;
     text-overflow:ellipsis;
     height:20px;

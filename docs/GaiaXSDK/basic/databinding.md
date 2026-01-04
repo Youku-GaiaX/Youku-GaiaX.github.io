@@ -43,7 +43,7 @@ databinding文件中的data数据模块可用于为节点绑定数据和样式�
 
 对于样式和布局的动态修改，我们通常在databinding对应的nodeId的extend结构进行调整，例如：
 
-可设置的属性key值可以在这里找到：<https://github.com/alibaba/GaiaX/blob/main/GaiaXAndroid/src/main/kotlin/com/alibaba/gaiax/template/GXTemplateKey.kt>
+支持的样式 key 与 `index.css` 中完全一致，完整列表可参考[样式文档](./style.md) 和源码：<https://github.com/alibaba/GaiaX/blob/main/GaiaXAndroid/src/main/kotlin/com/alibaba/gaiax/template/GXTemplateKey.kt>
 
 ```json
 {
